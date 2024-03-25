@@ -1,0 +1,112 @@
+.headText {
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 89%;
+    color: var(--secondarytext);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 2rem 0 0 4rem;
+}
+
+
+#domains .content   {
+    margin-top: 3rem;
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    overflow: hidden;
+}
+
+
+.content > div {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rightAligned > .container {
+    flex-direction: row-reverse
+}
+
+.leftAligned{
+    margin-left: -1rem;
+}
+
+.rightAligned{
+    margin-left: 8rem;
+}
+
+/* .leftAligned > .container {
+    flex-direction: row-reverse;
+} */
+
+.container {
+    height: 80%;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+} 
+
+
+.imgContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.imgContainer > img {
+    height: 70vh;
+    width: 90vh;
+    aspect-ratio: 1;
+    filter: drop-shadow(4px 7px 40px rgba(3, 225, 255, 0.25));
+    transition: all 0.4s;
+} 
+
+.imgContainer > img:hover {
+    filter: drop-shadow(4px 7px 40px rgba(3, 226, 255, 0.693));
+}
+
+.card {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 25px;
+    transition: all 0.3s;
+}
+
+.card > h1 {
+    color: var(--secondarytext);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: start;
+    border-bottom: 1px solid var(--bordercolor);
+    padding: 4px;
+}
+
+.card > p {
+    color: var(--tertiarytext);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: justify;
+    overflow: scroll;
+}

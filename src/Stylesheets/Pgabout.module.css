@@ -1,0 +1,56 @@
+.bgimage {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contianer {
+  background-image: url("../Assets/Aboutbg.svg");
+  height: 100vh;
+  margin: 2rem 0 2rem 0;
+}
+
+.h2 {
+  color: white;
+  position: absolute;
+  width: 305px;
+  height: 115px;
+  top: 220px;
+  font-size: 2.5rem;
+}
+
+.para {
+  position: absolute;
+  width: 727px;
+  height: 180px;
+  left: 70px;
+  top: 370px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 96.7%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: justify;
+}
+
+@media screen and (max-width: 432px){
+  .contianer{
+    width: 40rem;
+    height: 80vh;
+    margin-top: -1.5rem;
+  }
+  
+  .h2{
+    font-size: 2rem;
+    margin: -2.5rem 0 0 -2.5rem;
+  }
+
+  .para{
+    width: 300px;
+    font-size: 1.3rem;
+    margin: 3rem 0 0 -1.5rem;
+  }
+}

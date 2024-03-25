@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.headtop{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../Assets/spiralani.svg);
+    margin-left: -2rem;
+}
+
+.h1{
+    color: white;
+    font-size: 5rem;
+    background: linear-gradient(
+      270deg,
+      #9bffff 9.26%,
+      #3fffff 27.77%,
+      #6bdbd8 48.19%,
+      #2fbebb 64.52%,
+      #027498 83.12%,
+      #036 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Viga';
+}
+
+.p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'IBM Plex Mono';
+}

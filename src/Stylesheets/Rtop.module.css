@@ -1,0 +1,67 @@
+body{
+    height: 100%;
+}
+
+.rTop {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.head {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+
+}
+
+.wrap {
+    height: 85vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.topCard {
+    border-radius: 20px;
+    height: 70vh;
+    width: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.178);
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.proDetails {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.proDetails>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap>div:hover {
+    transform: scaleY(1.1);
+    width: 30%;
+}

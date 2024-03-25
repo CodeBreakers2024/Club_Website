@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.AchievementsContainer{
+    height: 220vh;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    background-color: black;
+}
+.AchievementsHead{
+    height: 10vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 4vh; /* Responsive font size */
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.AchievementsCards{
+   height: 210vh;
+   width: 100%;
+   row-gap: 10px;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   margin-bottom: 1.5rem;
+}
+
+.AchievementsCard{
+    height: 40vh;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(240, 248, 255, 0.089);
+    transition: all .2s;
+}
+
+.AchievementsCard:hover{
+    transform: scaleX(1.1);
+}
+
+.leftOfAchievementCard{
+   width: 40%;
+   height: 100%;
+   display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.leftOfAchievementCard>img{
+   height: 100%;
+   width: 100%;
+}
+.rightOfAchievementCard{
+    width: 60%;
+    height: 100%;
+    display:flex;
+     justify-content: center;
+     align-items:center;
+     flex-direction: column;
+     row-gap: 5px;
+}
+.details{
+    height: 35%;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.089);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 5px;
+    row-gap: 4px;
+}
+h1{
+    font-weight: 400;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: calc(1em + 1vw); /* Responsive font size */
+}
+h4{
+    font-weight: 300;
+    color: lightgray;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: calc(0.8em + 0.8vw); /* Responsive font size */
+}
+h2{
+    font-weight: 500;
+    color: rgb(224, 224, 224);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: calc(0.9em + 0.9vw); /* Responsive font size */
+}
+p{
+    color: rgb(97, 97, 97);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(0.7em + 0.7vw); /* Responsive font size */
+}
+
+/* Small devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .AchievementsContainer{
+        flex-direction: column;
+    }
+    .AchievementsCard{
+        flex-direction: column;
+        height: 80vh;
+        width: 90%;
+    }
+    .leftOfAchievementCard, .rightOfAchievementCard{
+        width: 100%;
+    }
+    .AchievementsCards{
+        row-gap: 20px;
+    }
+}
+
+/* Medium devices (tablets, less than 768px) */
+@media (max-width: 767.98px) { 
+    .AchievementsCard{
+        flex-direction: column;
+        height: 60vh;
+        width: 80%;
+    }
+    .leftOfAchievementCard, .rightOfAchievementCard{
+        width: 100%;
+    }
+    .AchievementsCards{
+        row-gap: 20px;
+    }
+}
+
+/* Large devices (desktops, less than 992px) */
+@media (max-width: 991.98px) { 
+    .AchievementsCard{
+        height: 50vh;
+        width: 70%;
+    }
+    .AchievementsCards{
+        row-gap: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .AchievementsCard{
+        height: 40vh;
+        width: 60%;
+    }
+    .AchievementsCards{
+        row-gap: 20px;
+    }
+}

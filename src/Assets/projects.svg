@@ -1,0 +1,10 @@
+<svg width="130" height="123" viewBox="0 0 130 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.25 99.8333L23.75 120.583L34.125 79.0833L3 44.5L47.9583 41.0417L65.25 3L82.5417 41.0417L127.5 44.5L96.375 79.0833L106.75 120.583L65.25 99.8333Z" stroke="url(#paint0_diamond_217_111)" stroke-width="4.36842" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<radialGradient id="paint0_diamond_217_111" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(65.25 61.7916) rotate(90) scale(137.18 148.155)">
+<stop stop-color="#008AC6"/>
+<stop offset="0.427" stop-color="#00E0FF"/>
+<stop offset="0.947" stop-color="#0555F0"/>
+</radialGradient>
+</defs>
+</svg>

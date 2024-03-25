@@ -1,0 +1,15 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_710_111)">
+<path d="M127.5 63.75C127.5 98.9582 98.9582 127.5 63.75 127.5M127.5 63.75C127.5 28.5418 98.9582 0 63.75 0M127.5 63.75H0M63.75 127.5C28.5418 127.5 0 98.9582 0 63.75M63.75 127.5C63.75 127.5 92.0834 106.25 92.0834 63.75C92.0834 21.25 63.75 0 63.75 0M63.75 127.5C63.75 127.5 35.4166 106.25 35.4166 63.75C35.4166 21.25 63.75 0 63.75 0M63.75 0C28.5418 0 0 28.5418 0 63.75" stroke="url(#paint0_diamond_710_111)" stroke-width="3.57895"/>
+</g>
+<defs>
+<radialGradient id="paint0_diamond_710_111" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(63.75 63.75) rotate(90) scale(148.75 151.725)">
+<stop stop-color="#008AC6"/>
+<stop offset="0.427" stop-color="#00E0FF"/>
+<stop offset="0.947" stop-color="#0555F0"/>
+</radialGradient>
+<clipPath id="clip0_710_111">
+<rect width="136" height="136" fill="white"/>
+</clipPath>
+</defs>
+</svg>

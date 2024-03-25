@@ -1,0 +1,201 @@
+.footer {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logo_class {
+    height: 40%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+  
+  .imgText {
+    background: linear-gradient(
+      270deg,
+      #9bffff 9.26%,
+      #3fffff 27.77%,
+      #6bdbd8 48.19%,
+      #2fbebb 64.52%,
+      #027498 83.12%,
+      #036 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Viga", sans-serif;
+  }
+  
+
+
+
+  .right {
+     width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .Copyright{
+    height: 20%;
+    width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+  .Copyright>h4{
+    display: flex;
+      align-items: center;
+    justify-content: center;
+  }
+  .Copyright>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  column-gap: 2vw;
+  }
+  .mainCont{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Information{
+    height: 100%;
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Information h2{
+      color: white;
+  }
+.Club{
+  height: 100%;
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  .Club h2{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .list{
+    width: 100%;
+      color: white;
+      list-style: none;
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 0.5rem;
+      font-size: 18px;
+  }
+  
+  .list2{
+      list-style: none;
+      color: white;
+      width: 100%;
+      list-style: none;
+      margin-top: 0.5rem;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 0.5rem;
+  }
+  
+  .rightmost{
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2.1rem;
+      margin-right: 40px;
+      margin-bottom: 8px;
+  }
+
+  .rightmost > img {
+    height: 5vw;
+    aspect-ratio: 1;
+  }
+
+  @media only screen and (max-width: 768px){
+    .footer{
+      width: 100%;
+      height: 45rem;
+      flex-direction: column;
+    }
+
+    .left{
+      margin-top: -20rem;
+      height: 38%;
+    }
+
+    .right{
+      width: 100%;
+      height: 61%;
+      display: flex;
+      flex-direction: column;
+      margin-top: -16rem;
+    }
+
+    .mainCont{
+      height: 32%;
+      width: 124%;
+      margin-top: 15rem;
+    }
+
+    .Information{
+      display: block
+    }
+
+    .Club{
+      display: block;
+    }
+     
+    .Copyright{
+      opacity: 0;
+    }
+
+    .rightmost{
+      margin-right: 0;
+      margin-top: -2rem;  
+    }
+
+    .rightmost > img{
+      height: 14vw;
+    }
+  }

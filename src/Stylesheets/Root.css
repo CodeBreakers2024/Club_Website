@@ -29,6 +29,7 @@
 
 body {
     height: 400vh;
+    width: 100%;
     background-color: var(--bgcolor);
     overflow-x: hidden;
 }
@@ -42,5 +43,8 @@ body {
     ::-webkit-scrollbar{
         display: none;
         -webkit-appearance: none;
+    }
+    body{
+        width:100%;
     }
 }

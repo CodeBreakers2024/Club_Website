@@ -116,35 +116,42 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const teamNameSnapshot = await contactFormDB.orderByChild("leader/teamName").equalTo(teamData.teamName).once("value");
-        if (teamNameSnapshot.exists()) {
-            alert("Team name already exists!");
-            return;
-        }
+        const allDataSnapshot = await contactFormDB.once("value");
+        const allData = allDataSnapshot.val();
 
-        const leaderEmailSnapshot = await contactFormDB.orderByChild("leader/email").equalTo(teamData.leader.email).once("value");
-        if (leaderEmailSnapshot.exists()) {
-            alert("Leader's email already exists!");
-            return;
-        }
+        let emails = [];
 
-        const leaderContactSnapshot = await contactFormDB.orderByChild("leader/contact").equalTo(teamData.leader.contact).once("value");
-        if (leaderContactSnapshot.exists()) {
-            alert("Leader's contact number already exists!");
+        Object.values(allData).forEach((data) => {
+            
+            emails.push(data.leader.email);
+            data.members.forEach((member) => {
+                emails.push(member.email);
+            })
+
+            if (data.teamName === teamData.teamName) {
+                alert("Team name already exists!");
+                return;
+            }
+
+            if (data.leader.contact === teamData.leader.contact) {
+                alert("Leader's contact number already exists!");
+                return;
+            }
+        })
+
+        if (emails.includes(teamData.leader.email)) {
+            alert("Leader's Email already exists!");
             return;
         }
 
         for (let i = 0; i < teamData.members.length; i++) {
-            const memberEmailSnapshot = await contactFormDB.orderByChild(`members/${i}/email`).equalTo(teamData.members[i].email).once("value");
-            if (memberEmailSnapshot.exists()) {
+            if (emails.includes(teamData.members[i].email)) {
                 alert(`Member ${i + 1}'s email already exists!`);
                 return;
             }
         }
 
         saveMessages(teamData);
-
-        alert("Form submitted successfully!");
         navigate("/");
     };
     return (

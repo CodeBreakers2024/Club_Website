@@ -1,0 +1,154 @@
+[
+    {
+      "name": "Atharva Arya",
+      "date": "October 21st 2022",
+      "category": {
+        "tag": "GSOC'21",
+        "color": "grey"
+      },
+      "description": "Our club member Atharva Arya was selected for GSOC 2021 The Google Summer of Code, often abbreviated to GSoC, is an international annual program in which Google awards stipends to contributors who successfully complete a free and open-source software coding project during the summer.",
+      "link": {
+        "url": "https://drive.google.com/file/d/1nlV0fwPfAvh8077nAqZCFggrfDuZcWuh/view?usp=sharing"
+      },
+      
+      "status":"finished"    
+    },
+    {
+      "name": "Anjali Kushwaha",
+      "date": "October 1st 2022",
+      "category": {
+        "tag": "First Position ,HackTheGame IIT Goa",
+        "color": "green"
+      },
+      "description": "Our Club member Anjali Kushwaha along with Madhav Jha secured first position in Hack the Game organised by IIT Goa, during their annual technical fest Cepheus 2022, wherein they made a automated Google atari breakout game using openCV.",
+      "link": {
+        "url": "https://drive.google.com/file/d/1r3hv6Ut2vS7tmDH68o8ZXLzAg7SZsNp7/view?usp=sharing"
+      },
+      "resource":{
+        "url":"https://drive.google.com/drive/folders/15NZjg9eu9HkRMu-MBzbbDs0Npecqv372?usp=sharing"
+      },
+      "status":"finished"    
+    },
+    {
+      "name": "Akshat, Harsha, Khushi",
+      "date": "August 20th 2022",
+      "category": {
+        "tag": "Secured third position in Treasure Hunt organised by GDSC RCOEM",
+        "color": "green"
+      },
+      "description": "Our club members Akshat, Harsha and Khushi secured third position in Treasure hunt organised by GDSC RCOEM. It was a team event wherein each team had to find solutions to some tricky question in the least possible time.",
+      "link": {
+        "url": "https://drive.google.com/file/d/1Kd_V9J2K1bAn8nvQpqGPBhxZdoZfqMsj/view?usp=sharing"
+      },
+      "resource":{
+        "url":"https://drive.google.com/drive/folders/1j25j6eYxYOOk0rgu2INXjR_XI4pnYgje?usp=sharing"
+      },
+      "status":"finished"    
+    },
+    {
+      "name": "Amit Mondal",
+      "date": "August 14th 2022",
+      "category": {
+        "tag": "Second position in Code and Win",
+        "color": "purple"
+      },
+      "description": "Our Club member Amit Mondal secured second position in \"code and win\" a project exhibition organised by computer Science Department, RCOEM Nagpur. In which he presented a web cralwer which would crawl the specified url for SSL certificate, ADA Compliance and cookie checker.",
+      "link": {
+        "url": "https://drive.google.com/drive/folders/1iP7Jw34dg3sZ68GutNz-pawphBVNcIke"
+      },
+      "resource":{
+        "url":"https://drive.google.com/drive/folders/1iP7Jw34dg3sZ68GutNz-pawphBVNcIke"
+      },
+      "status":"finished"    
+    },
+    {
+      "name": "Prathamesh, Rohit, Akshat",
+      "date": "August 9th 2022",
+      "category": {
+        "tag": "Crack-O-ween",
+        "color": "orangered"
+      },
+      "description": "Our club member Prathamesh,Rohit and Akshat along with Bhushan secured second position in Crack-o-ween a national level compeition organised ISDC, Rcoem . It was a team event wherein each team had to crack the password of a pdf file from clues provided, and based on the topic in the pdf they need to develop a website.",
+      "link": {
+        "url": "https://drive.google.com/drive/folders/1Q23qV0q5eS-HLDCZRS30MKYHcBRKbg60"
+      },
+      "resource": {
+        "url": "https://docs.google.com/document/d/1gWmXk80ZwABBcPE3Qg3M_ZobqWpeKjVk/edit"
+      },
+      "status":"finished"    
+    },
+    {
+      "name": "Himesh, Aditya",
+      "date": "March 27th 2022",
+      "category": {
+        "tag": "Treasure Hunt, Second Position",
+        "color": "green"
+      },
+      "description": "Our club member Aditya and Himesh secured second position in Treasuer Hunt a national level compeition GDSC RCOEM. It was a team event wherein each team had to find solutions to some tricky question in the least possible time.",
+      "link": {
+        "url": "https://web.microsoftstream.com/video/0ca7be93-f38f-4756-9942-8d3c101bb32f"
+      },
+      "resource": {
+        "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-6"
+      },
+      "status":"finished"
+    },
+    {
+      "name": "Amit Mondal",
+      "date": "March 19th 2022",
+      "category": {
+        "tag": "First position in Xeneia,PICT",
+        "color": "purple"
+      },
+      "description": "Our club member Amit Mondal secured first place in Xeneia, a national-level web design competition organized by PICT, Pune. The competition had two rounds: in round 1, participants submitted webpage designs on given topics, and in round 2, selected participants created webpages based on their designs.",
+      "link": {
+        "url": "https://web.microsoftstream.com/video/b7e113bc-5e65-449d-a3e9-21073f4968c9?list=trending"
+      },
+      "status":"finished"
+    },
+    {
+      "name": "Prathamesh Rajbhoj",
+      "date": "February 27th 2022",
+      "category": {
+        "tag": "Algo-Unlock 2nd Position",
+        "color": "purple"
+      },
+      "description": "Our club member Prathamesh secured second position in Algo-Unlock a national level compeition organised by Rcoem, Nagpur.",
+      "link": {
+        "url": "https://web.microsoftstream.com/video/1a04ec6e-dafa-4e5e-b9b1-472bb4f8ffc3"
+      },
+      "resource": {
+        "url": "https://www.ssncc.tech/blog/all-about-gsoc"
+      },
+      "status":"finished"
+    },
+    {
+      "name": "Akshat, Harsha, Inshal , Vinay",
+      "date": "January 24th 2022",
+      "category": {
+        "tag": "Code Heist, 3rd positionen"
+      },
+      "description": "Our club member Akshat, Harsha, Inshal and Vinay participated in Code-Heist, a national level social hackathon organised by NSS-RCOEM, Nagpur.They secured third position and won a cash prize of.",
+      "link": {
+        "url": "https://drive.google.com/drive/u/2/folders/1I-wGsunFiNhTuUboipZzaVi22YfKPumo"
+      },
+      "resource": {
+        "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-5"
+      },
+      "status":"finished"
+    },
+    {
+      "name": "Amit Mondal",
+      "date": "",
+      "category": {
+        "tag": "IIT Bombay Web Crawler compeition",
+        "color": "orangered"
+      },
+      "description": "Our club member Amit Mondal was selected in top 20 participants in webCrawler competition organised by IIT Bombay under Techfest. Wherein he developed a webcrawler which can crawl the sites to check SSl certificates, check cookies and give ADA compliance report.",
+      "link": {
+        "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings%2FCompetitive%20Programming-20220121_160355-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings"
+      },
+      "status":"finished"
+    }
+  ]
+  

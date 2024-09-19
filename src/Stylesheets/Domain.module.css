@@ -1,77 +1,70 @@
 .headText {
-    height: 100%;
     font-size: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 89%;
     color: var(--secondarytext);
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 2rem 0 0 4rem;
+    margin: 1rem;
 }
 
 
 #domains .content   {
-    margin-top: 3rem;
-    height: 93%;
-    width: 100%;
+    width: 100vw;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 5%;
     overflow: hidden;
 }
 
 
 .content > div {
-    height: 30%;
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .rightAligned > .container {
     flex-direction: row-reverse
 }
 
-.leftAligned{
-    margin-left: -1rem;
-}
+/* .leftAligned{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
 
-.rightAligned{
+/* .rightAligned{
     margin-left: 8rem;
-}
+} */
 
 /* .leftAligned > .container {
     flex-direction: row-reverse;
 } */
 
 .container {
-    height: 80%;
-    width: 97%;
+    width: 100vw;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 7px;
 } 
 
 
 .imgContainer {
-    height: 100%;
-    width: 40%;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
 } 
 
 .imgContainer > img {
-    height: 70vh;
-    width: 90vh;
+    width: 40vw; 
+    height: auto;
     aspect-ratio: 1;
     filter: drop-shadow(4px 7px 40px rgba(3, 225, 255, 0.25));
     transition: all 0.4s;
@@ -82,21 +75,19 @@
 }
 
 .card {
-    height: 80%;
-    width: 40%;
+    width: 45vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
     flex-direction: column;
-    padding: 25px;
+    padding: 2rem;
     transition: all 0.3s;
 }
 
 .card > h1 {
     color: var(--secondarytext);
     font-weight: 600;
-    letter-spacing: 1px;
     text-align: start;
     border-bottom: 1px solid var(--bordercolor);
     padding: 4px;
@@ -105,8 +96,137 @@
 .card > p {
     color: var(--tertiarytext);
     font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 1.5rem;
     text-align: justify;
     overflow: scroll;
+}
+
+@media (max-width: 1200px) {
+    .headText {
+        font-size: 1.8rem;
+        margin: 0.8rem;
+    }
+
+    .imgContainer {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgContainer > img {
+        width: 40vw;
+        height: auto;
+
+    }
+
+    .card {
+        width: 50vw;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .headText {
+        font-size: 2rem;
+        margin: 0.6rem;
+    }
+    .card > h1 {
+        font-size: 900;
+    }
+
+    #domains .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .imgContainer > img {
+        width: 40vw;
+        height: auto;
+
+    }
+
+    .card {
+        width: 50vw;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .headText {
+        font-size: 1.4rem;
+        margin: 0.5rem;
+    }
+
+    #domains .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .imgContainer {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgContainer > img {
+        width: 40vw;
+        height: auto;
+    }
+
+    .card {
+        width: 50vw;
+        padding: 0.8rem;
+    }
+
+    .card > p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6 , auto);
+    }
+    .headText {
+        font-size: 1.2rem;
+        margin: 0.4rem;
+    }
+
+    .imgContainer {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .imgContainer > img {
+        width: 50vw;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    .card > p {
+        font-size: 12px;
+    }
 }

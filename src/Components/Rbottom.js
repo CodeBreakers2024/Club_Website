@@ -17,25 +17,25 @@ function Rbottom() {
         },
 
         {
-            title: "",
+            title: "Python",
             image: "",
             description: "",
         },
 
         {
-            title: "",
+            title: "Java",
             image: "",
             description: "",
         },
 
         {
-            title: "",
+            title: "C++",
             image: "",
             description: "",
         },
 
         {
-            title: "",
+            title: "Figma",
             image: "",
             description: "",
         }

@@ -3,29 +3,75 @@
 }
 
 .carouselContainer{
-    height: 100%; 
-    width: 90%; 
-    margin: 4vh 11vh 12vh;
-    /* background-color: rgba(244, 248, 248, 0.06); 
-    border: 3px solid rgba(244, 248, 248, 0.06); */
+    width: 90vw; 
+    margin: auto;
     border-radius: 2rem;
-    margin-top: 1rem;
 }
 
 .carouselImage {
-    width: 100%;
-    height: 100%; 
+    width: 90vw; 
     display: block;
-    border: solid rgba(244, 248, 248, 0.06);
-    border-radius: 2rem;
+    border-radius: 2em;
+}
+  
+
+@media screen and (max-width: 1200px) {
+    .carouselContainer, .carouselImage {
+        width: 90vw;
+        border-radius: 1.8rem;
+    }
 }
 
-@media screen and (max-width: 430px) {
-   .carouselContainer{
-        width: 80%;   
-        height: 100%;
-        margin: 2vh 7vh 9vh ;
-        background: rgba(255, 249, 249, 0.06);
-        border-radius: 39px;
-   }
+@media screen and (max-width: 991.98px) {
+    .carouselContainer {
+        width: 95vw;
+        border-radius: 1.5rem;
+    }
+
+    .carouselImage {
+        border-radius: 1.5rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .carouselContainer {
+        width: 90vw;
+        border-radius: 1.2rem;
+    }
+
+    .carouselImage {
+        width: 90vw;
+        border-radius: 1.2rem;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 770px) {
+    .carouselContainer {
+        width: 90vw;
+        border-radius: 1rem;
+        margin: auto;
+    }
+    .ImageContainer {
+        width: 90%;
+    }
+    .carouselImage {
+        width: 90vw;
+        margin: auto;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carouselContainer {
+        width: 90vw;
+        border-radius: 0.8rem;
+        margin: auto;
+    }
+
+    .carouselImage {
+        width: 90vw;
+        border-radius: 1rem;
+        margin: auto;
+    }
 }

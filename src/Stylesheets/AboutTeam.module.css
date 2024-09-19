@@ -1,0 +1,79 @@
+.teamContainer {
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.h2 {
+    color: white;
+    width: 305px;
+    /* height: 20px; */
+    /* top: 220px; */
+    font-size: 2.5rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.h3 {
+    color: white;
+    /* width: 305px; */
+    /* height: 115px; */
+    /* top: 220px; */
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    /* margin-left: 43%; */
+}
+
+.memberCard {
+    height: 400px;
+    width: 300px;
+    background-color: #3b4048;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 40%;
+    justify-content: center;
+}
+
+.mimage {
+    height: 250px;
+    width: 100%;
+    margin: 0px;
+    background-color: #31353d;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.memberImage {
+    height: 250px;
+    width: 250px;
+    margin: 0px;
+    margin: auto;
+    margin-left: 20px;
+
+}
+
+.memberName {
+    color: white;
+    width: 305px;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px
+}
+
+.h4 {
+    color: white;
+    width: 140px;
+    height: 60px;
+    font-size: 1rem;
+    /* margin-left: 0px; */
+}

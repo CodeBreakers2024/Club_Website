@@ -1,0 +1,203 @@
+.registrationContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: #f1f1f1; 
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d0c6; 
+    margin-bottom: 1.5rem;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #c9c9c9;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00d0c6; 
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #f1f1f1;
+    transition: border-color 0.3s ease;
+}
+
+.formInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.teamInfoForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.memberInfoForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.paymentInfoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upiImage {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.paymentInfoForm .formInput {
+    width: 80%;
+}
+
+/* Button group styling */
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 20px;
+}
+
+.prevButton,
+.nextButton,
+.submitButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button colors */
+.prevButton {
+    background-color: #00d0c6;
+    color: white;
+}
+
+.prevButton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.nextButton {
+    background-color: #00d0c6; 
+    color: white;
+}
+
+.nextButton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.submitButton {
+    background-color: #28a745; 
+    color: white;
+    margin-left: auto;
+}
+
+.submitButton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.prevButton:hover:not(:disabled),
+.nextButton:hover:not(:disabled),
+.submitButton:hover:not(:disabled) {
+    opacity: 0.8;
+    transform: translateY(-2px); 
+    background-color: #00a3a1;
+}
+
+.prevButton:hover:not(:disabled) {
+    background-color: #009b95;
+}
+
+.nextButton:hover:not(:disabled) {
+    background-color: #009b95; 
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #218838; 
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .registrationContainer {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .formInput {
+        font-size: 0.9rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .prevButton,
+    .nextButton,
+    .submitButton {
+        width: 100%;
+    }
+
+    .submitButton {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .registrationContainer {
+        margin: 20px; 
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .formLabel {
+        font-size: 0.9rem;
+    }
+
+    .formInput {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .paymentInfoForm .formInput {
+        width: 100%;
+    }
+
+    .upiImage {
+        width: 120px;
+    }
+}

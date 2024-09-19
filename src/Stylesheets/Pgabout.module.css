@@ -6,34 +6,40 @@
 .contianer {
   background-image: url("../Assets/Aboutbg.svg");
   height: 100vh;
-  margin: 2rem 0 2rem 0;
+  padding: 5rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem 0 2rem 0; */
+  gap: 2rem;
 }
 
 .h2 {
   color: white;
-  position: absolute;
-  width: 305px;
-  height: 115px;
-  top: 220px;
+  /* position: absolute; */
+   width: 20rem;
+  /* height: 115px; */
+  /* top: 220px; */
   font-size: 2.5rem;
+  /* text-decoration: underline; */
+  /* text-underline-offset: 0.3rem; */
 }
 
 .para {
-  position: absolute;
-  width: 727px;
-  height: 180px;
-  left: 70px;
-  top: 370px;
+  /* position: absolute; */
+  width: 40rem;
+  /* height: 180px; */
+  /* left: 70px; */
+  /* top: 370px;  */
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 96.7%;
+  /* font-weight: 300; */
+  font-size: 24px;
+  line-height: 99.7%;
   display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
+  text-align: left;
+  letter-spacing: 0.1em;
+  word-spacing: 0.08rem;
   color: #ffffff;
-  text-align: justify;
 }
 
 @media screen and (max-width: 432px){

@@ -1,201 +1,134 @@
-.footer {
-    height: 50vh;
-    width: 100%;
-    background-color: rgb(14, 14, 14);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .left {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .logo_class {
-    height: 40%;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-  }
-  
-  .imgText {
-    background: linear-gradient(
-      270deg,
-      #9bffff 9.26%,
-      #3fffff 27.77%,
-      #6bdbd8 48.19%,
-      #2fbebb 64.52%,
-      #027498 83.12%,
-      #036 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: "Viga", sans-serif;
-  }
-  
-
-
-
-  .right {
-     width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .Copyright{
-    height: 20%;
-    width: 100%;
-      color: white;
-      display: flex;
-      align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 6px;
-  }
-  .Copyright>h4{
-    display: flex;
-      align-items: center;
-    justify-content: center;
-  }
-  .Copyright>ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-  justify-content: center;
-  column-gap: 2vw;
-  }
-  .mainCont{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .Information{
-    height: 100%;
-    width:30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .Information h2{
-      color: white;
-  }
-.Club{
-  height: 100%;
-    width:30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+*{
+  margin: 0px;
+  padding: 0px;
 }
-  .Club h2{
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+
+#footer{
+  height: 25vw;
+  width: 100vw;
+  background-color: #1A1E1E;
+  opacity: 97%;
+  position: relative;
+}
+
+#footerContent{
+  height: 20vw;
+  width: 100vw;
+  background-color: #078888;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center; 
+}
+
+#footerTitle{
+  display: inline-block;
+  font-size:8vw;
+  font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+
+  background: linear-gradient(to bottom, #078888 0%,#078888 50%, #1A1E1E 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transform: translateY(-50%);
+}
+
+#footerTag{
+  color: white;
+  font-size: 2vw; 
+  margin-top: -6vw;
+}
+
+#footerInfo{
+  color: white;
+  font-size: 2.5vw;
+  margin-top: 3vw;
+  font-weight: 100;
+}
+
+#footerLine{
+  margin-top: 2vw;
+  color: white;
+  font-size: 1vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
+#footerRedirects{
+  margin-top: 2vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: 100;
+}
+
+#footerCopyright{
+  display: flex;
+  opacity: 65%;
+}
+
+#footerCopyrightText{
+  margin-left: 0.5vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+#footerTerms ul{
+  list-style-type: none;
+  font-size: 1.5vw;
+}
+
+#footerTerms li{
+  display: inline-block;
+}
+
+#footerTerms a{
+  text-decoration: none;
+  color: white;
+  padding-right: 1vw;
+  opacity: 65%;
+}
+
+#footerSocial{
+  display: flex;
+  align-items: space-between;
   
-  .list{
-    width: 100%;
-      color: white;
-      list-style: none;
-      margin-top: 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      row-gap: 0.5rem;
-      font-size: 18px;
-  }
+}
+
+#footerSocial div{
+  width: 3vw;
+  height: 3vw;
+  margin-right: 2vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  .list2{
-      list-style: none;
-      color: white;
-      width: 100%;
-      list-style: none;
-      margin-top: 0.5rem;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      row-gap: 0.5rem;
-  }
-  
-  .rightmost{
-      width: 20%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      column-gap: 2.1rem;
-      margin-right: 40px;
-      margin-bottom: 8px;
-  }
+}
 
-  .rightmost > img {
-    height: 5vw;
-    aspect-ratio: 1;
-  }
+#footerSocial a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+}
 
-  @media only screen and (max-width: 768px){
-    .footer{
-      width: 100%;
-      height: 45rem;
-      flex-direction: column;
-    }
+#footerInstagram i{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 0vh;
+}
 
-    .left{
-      margin-top: -20rem;
-      height: 38%;
-    }
-
-    .right{
-      width: 100%;
-      height: 61%;
-      display: flex;
-      flex-direction: column;
-      margin-top: -16rem;
-    }
-
-    .mainCont{
-      height: 32%;
-      width: 124%;
-      margin-top: 15rem;
-    }
-
-    .Information{
-      display: block
-    }
-
-    .Club{
-      display: block;
-    }
-     
-    .Copyright{
-      opacity: 0;
-    }
-
-    .rightmost{
-      margin-right: 0;
-      margin-top: -2rem;  
-    }
-
-    .rightmost > img{
-      height: 14vw;
-    }
-  }
+#footerImage{
+  position: absolute;
+  left: 0;
+  bottom: 0vh;
+  width: 40vw;
+}

@@ -15,6 +15,7 @@ const Final = () => {
                     Domains Invited
                 </div>
             </div>
+            
             <div className={Styles.content}>
                 <div className={Styles.leftAligned}>
                     <div className={Styles.container}>
@@ -29,6 +30,7 @@ const Final = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={Styles.rightAligned}>
                     <div className={Styles.container}>
                         <div className={Styles.imgContainer}>
@@ -41,6 +43,7 @@ const Final = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={Styles.leftAligned}>
                     <div className={Styles.container}>
                         <div className={Styles.imgContainer}>
@@ -53,6 +56,7 @@ const Final = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={Styles.rightAligned}>
                     <div className={Styles.container}>
                         <div className={Styles.imgContainer}>

@@ -1,106 +1,80 @@
 * {
     padding: 0;
 }
-
 .container {
-    background-color: rgb(33, 39, 40 , 0.53);
-    height: 120vh;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10rem;
-    margin-bottom: 3rem;
-    border-radius: 10px;
+    width: 95vw;
+    height: auto;
+    background-color: rgb(40, 37, 37);
+    border-radius: 2rem;
+    margin: auto;
 }
-
-.carouselContainer { 
-    height: 98%;
-    width: 90%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 7px;
+.HeadText {
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+.message {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.carouselContainer{
+    width: 90vw; 
+    margin: auto;
     border-radius: 2rem;
 }
-.toptext{
-    height: 10%;
-    font-size: 4vh;
-    font-weight: 800;
-    color: rgb(231, 231, 231);
-}
 
-.imgContainer{
-    height: 80%;
-    width: 95%;
-}
-
-.imgContainer>div{
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
- display: grid;
- place-items: center;
-}
-.img1{
-    width: 100vw;
-    height: 100vh;
-    border-radius: 2rem;
- display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("../Assets/team.jpg") ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    letter-spacing: 1px ;
-    font-size: xx-large;
-}
-h3{
-    margin: 70vh 0 0 10vw;
-    color: rgb(0, 0, 0);
-    height: 90px;
-    width: 70%;
-}
-.img2{
-    width: 100vw;
-    height: 100vh;
-    border-radius: 2rem;
- display: grid;
- place-items: center;
-    background: url("../Assets/team.jpg") center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    letter-spacing: 1px ;
-    font-size: xx-large;
-
-}
-.img3{
-    width: 100vw;
-    height: 100vh;
-    border-radius: 2rem;
- display: grid;
- place-items: center;
-    background: url("../Assets/team.jpg") center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    letter-spacing: 1px ;
-    font-size: xx-large;
-
-}
 .carouselImage {
-    width: 100%;
-    height: 95%;
-    border-radius: 2rem;
+    width: 90vw; 
+    display: block;
+    border: solid rgba(244, 248, 248, 0.06);
+    border-radius: 2em;
 }
 
+@media (max-widht: 1200px) {
+    .HeadText {
+        font-size: 2rem;
+        margin: 1.5rem;
+        padding: 0.8rem;
+    }
+    .message {
+        width: 70vw;
+        margin: auto;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
 
-@media screen and (max-width: 430px) {
-   .carouselContainer {
-        width: 80%;  
-        height: 100%;
-        margin: 2vh 7vh 9vh ;
-        background: rgba(255, 249, 249, 0.06);
-        border-radius: 39px;
-   }
+@media (max-width: 990px) {
+    .HeadText {
+        font-size: 2rem;
+        margin: 1.5rem;
+        padding: 0.8rem;
+    }
+    .message {
+        width: 70vw;
+        margin: auto;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .HeadText {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    .message {
+        width: 75vw;
+        margin: auto;
+        padding: 1.5rem;
+        font-size: 1rem;
+        text-align: start;
+    }
 }

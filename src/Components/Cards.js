@@ -1,11 +1,18 @@
 import React from "react";
 
-import eventsIcon from "../Assets/events.svg";
-import projectsIcon from "../Assets/projects.svg";
-import upskillIcon from "../Assets/upskill.svg";
-import communityIcon from "../Assets/community.svg";
-import mentorshipIcon from "../Assets/mentorship.svg";
-import eyeopenIcon from "../Assets/vision.svg";
+import EventsIcon from "../Assets/Events.png";
+import UpskillIcon from "../Assets/Upskill.png";
+import ProjectsIcon from "../Assets/Projects.png";
+import MentorshipIcon from "../Assets/Mentorship.png";
+import VisionIcon from "../Assets/Vision.png";
+import NetworkingIcon from "../Assets/Networking.png";
+
+// import eventsIcon from "../Assets/events.svg";
+// import projectsIcon from "../Assets/projects.svg";
+// import upskillIcon from "../Assets/upskill.svg";
+// import communityIcon from "../Assets/community.svg";
+// import mentorshipIcon from "../Assets/mentorship.svg";
+// import eyeopenIcon from "../Assets/vision.svg";
 
 import Style from "../Stylesheets/Cards.module.css";
 
@@ -20,7 +27,7 @@ const Cards = () => {
           <div className={Style.cards}>
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={eventsIcon} alt="" />
+                <img src={UpskillIcon} alt="" />
               </div>
               <div className={Style.name}>Events</div>
               <div className={Style.description}>
@@ -30,7 +37,7 @@ const Cards = () => {
             </div>
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={projectsIcon} alt="" />
+                <img src={ProjectsIcon} alt="" />
               </div>
               <div className={Style.name}>Projects</div>
               <div className={Style.description}>
@@ -41,7 +48,7 @@ const Cards = () => {
             </div>{" "}
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={upskillIcon} alt="" />
+                <img src={MentorshipIcon} alt="" />
               </div>
               <div className={Style.name}>Upskill</div>
               <div className={Style.description}>
@@ -52,7 +59,7 @@ const Cards = () => {
             </div>{" "}
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={communityIcon} alt="" />
+                <img src={VisionIcon} alt="" />
               </div>
               <div className={Style.name}>Community</div>
               <div className={Style.description}>
@@ -61,7 +68,7 @@ const Cards = () => {
             </div>{" "}
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={mentorshipIcon} alt="" />
+                <img src={EventsIcon} alt="" />
               </div>
               <div className={Style.name}>Mentorship</div>
               <div className={Style.description}>
@@ -71,7 +78,7 @@ const Cards = () => {
             </div>{" "}
             <div className={Style.card}>
               <div className={Style.icon}>
-                <img src={eyeopenIcon} alt="" />
+                <img src={NetworkingIcon} alt="" />
               </div>
               <div className={Style.name}>Vision</div>
               <div className={Style.description}>
@@ -82,10 +89,6 @@ const Cards = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className={Style.quote}>
-        <div className={Style.quoteText}>{"</We code and Conquer>"}</div>
       </section>
     </>
   );

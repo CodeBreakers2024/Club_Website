@@ -1,0 +1,148 @@
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 90%;
+  background: #1e1e1e;
+  color: #ffffff;
+  direction: rtl; 
+}
+
+.timelineLine {
+  position: absolute;
+  right: 50%; 
+  width: 4px;
+  background: #00bfff;
+  top: 0;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.timelineLine::before {
+  content: '';
+  position: absolute;
+  right: -4px; 
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #00bfff;
+}
+
+
+.timelineItem {
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  right: calc(50% - 4px); 
+  width: calc(50% - 4px); 
+  background: #00bfff;
+  top: 50%;
+  height: 4px;
+  transform: translateX(50%); 
+  z-index: -1; 
+}
+
+.card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  width: 50%;
+  max-width: 400px; 
+}
+
+.card:nth-child(odd) {
+  margin-left: auto; 
+  margin-right: 0;
+  transform: translateX(30px);
+}
+
+.card:nth-child(even) {
+  margin-left: 0;
+  margin-right: auto;
+  transform: translateX(-30px);
+}
+
+.card:focus {
+  transform: translateY(-8px) scale(1.03); 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.eventImage {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 15px;
+  object-fit: cover; 
+}
+
+.eventTitle {
+  font-size: 1.6rem;
+  margin: 16px 0;
+  color: #00bfff;
+  font-weight: 600;
+  text-align: center; 
+}
+
+.eventDescription {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 16px;
+}
+
+.eventDate {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 95%;
+      padding: 20px;
+      max-width: none; 
+  }
+
+  .card:nth-child(odd),
+  .card:nth-child(even) {
+      transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .timelineContainer {
+      padding: 20px 10px;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+      padding: 16px;
+  }
+
+  .eventTitle {
+      font-size: 1.4rem;
+  }
+
+  .eventDescription {
+      font-size: 1rem;
+  }
+}

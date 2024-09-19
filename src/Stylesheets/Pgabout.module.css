@@ -3,60 +3,91 @@
   margin-bottom: 2rem;
 }
 
+/* Type animation */
+.h2::after{
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* type animation ends */
+
 .contianer {
-  background-image: url("../Assets/Aboutbg.svg");
-  height: 100vh;
-  padding: 5rem;
-  padding-top: 6rem;
+  background: url("../Assets/about-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  /* margin: 2rem 0 2rem 0; */
-  gap: 2rem;
+}
+
+.contianer::before {
+  content: '';
+  position: absolute;
+  background-color: #3D424A60;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .h2 {
   color: white;
-  /* position: absolute; */
-   width: 20rem;
-  /* height: 115px; */
-  /* top: 220px; */
-  font-size: 2.5rem;
-  /* text-decoration: underline; */
-  /* text-underline-offset: 0.3rem; */
+  font-size: 5rem;
+  z-index: 100;
+  text-align: center;
 }
 
 .para {
-  /* position: absolute; */
-  width: 40rem;
-  /* height: 180px; */
-  /* left: 70px; */
-  /* top: 370px;  */
-  font-family: "Roboto";
-  /* font-weight: 300; */
+  max-width: 40rem;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
-  line-height: 99.7%;
+  line-height: 1.5;
   display: flex;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.1em;
   word-spacing: 0.08rem;
   color: #ffffff;
+  z-index: 100;
 }
 
-@media screen and (max-width: 432px){
-  .contianer{
-    width: 40rem;
-    height: 80vh;
-    margin-top: -1.5rem;
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 3rem;
   }
-  
-  .h2{
-    font-size: 2rem;
-    margin: -2.5rem 0 0 -2.5rem;
+  .contianer {
+    height: 80vh;
+    width:100%;
+  }
+  .para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contianer {
+    height: 80vh;
+    width:100%;
   }
 
-  .para{
-    width: 300px;
-    font-size: 1.3rem;
-    margin: 3rem 0 0 -1.5rem;
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .para {
+    font-size: 16px;
   }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from '../Assets/tcblogo.jpg';
 import Style from "../Stylesheets/Navbar.module.css"
-import { Link } from 'react-router-dom';
+import { Link ,useLocation} from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import { useState , useEffect} from 'react';
 import Ham from './Ham';
 
 const NavBar = () => {
-
+    const path = useLocation()
     const [text , setText] = useState('TheCodeBreakers');
     const breakPoint = 1000;
 
@@ -41,12 +41,12 @@ const NavBar = () => {
                 <MediaQuery minWidth={breakPoint}>
                 <nav className={Style.visibleOnLargeScreen}>
                     <ul className={Style.list}>
-                        <li><Link to={"/"} className={Style.active}>Home</Link></li>
-                        <li><Link to={"/about"}>About</Link></li>
-                        <li><Link to={"/achievements"}>Achievements</Link></li>
-                        <li><Link to={"/events"}>Events</Link></li>
-                        <li><Link to={"/resources"}> Resources </Link></li>
-                        <li><Link to={"/register"}> Register </Link></li>
+                        <li><Link to={"/"} className={path.pathname=="/" ? Style.active : ""}>Home</Link></li>
+                        <li><Link to={"/about"} className={path.pathname=="/about" ? Style.active : ""}>About</Link></li>
+                        <li><Link to={"/achievements"} className={path.pathname=="/achievements" ? Style.active : ""}>Achievements</Link></li>
+                        <li><Link to={"/events"} className={path.pathname=="/events" ? Style.active : ""}>Events</Link></li>
+                        <li><Link to={"/resources"} className={path.pathname=="/resources" ? Style.active : ""}> Resources </Link></li>
+                        <li><Link to={"/register"} className={path.pathname=="/register" ? Style.active : ""}> Register </Link></li>
                     </ul>
                 </nav>   
                 </MediaQuery>

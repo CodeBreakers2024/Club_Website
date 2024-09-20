@@ -23,7 +23,6 @@ body{
     letter-spacing: 0.7px;
     color: whitesmoke;
     margin-bottom: 2rem;
-
 }
 
 .wrap {
@@ -65,4 +64,37 @@ body{
 .wrap>div:hover {
     transform: scaleY(1.1);
     width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+    .rTop{
+        margin-top: 0vh;
+        height: 90vh;
+    }
+    .wrap{
+        height:84vh;
+        width: 97%;
+        display:flex;
+        column-gap: 4px;
+    }
+    .topCard{
+        height: 100%;
+        width: 20vw;
+        flex-grow: 4;
+        flex-shrink: 5;
+        transform: none;
+    }
+    .topCard:not(.topCard:hover){
+        flex:1;
+    }
+    .topCard:hover{
+        flex:20;
+        height: 100%;
+        width: 90vw;
+        transform: none;
+    }
+    .head{
+        padding: 5px;
+        height:5vh;
+    }
 }

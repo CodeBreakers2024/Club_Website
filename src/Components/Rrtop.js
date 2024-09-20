@@ -3,8 +3,6 @@ import Style from '../Stylesheets/Rtop.module.css'
 
 function Rtop() {
   return (
-    <>
-     <header></header>
       <div className={Style.rTop}>
         <div className={Style.head}>Projects</div>
         <div className={Style.wrap}>
@@ -20,7 +18,6 @@ function Rtop() {
           <div className={Style.topCard}>{/* Add content here */}</div>
         </div>
       </div>
-    </>
   );
 }
 

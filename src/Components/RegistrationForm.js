@@ -165,7 +165,7 @@ const RegistrationForm = () => {
                     <MemberInfoForm page={page} memberlist={teamData.members} handleChange={handleMemberChange} />
                 )}
 
-                {page === members + 1 && <PaymentInfoForm payment={teamData.payment} handleChange={handlePaymentChange} />}
+                {/* {page === members + 1 && <PaymentInfoForm payment={teamData.payment} handleChange={handlePaymentChange} />} */}
 
                 <div className={styles.buttonGroup}>
                     <button
@@ -180,14 +180,14 @@ const RegistrationForm = () => {
                         className={styles.nextButton}
                         name="next"
                         onClick={handleFormSwitch}
-                        disabled={page === members + 1}>
+                        disabled={page === members}>
                         Next
                     </button>
 
                     <button
                         className={styles.submitButton}
                         type="submit"
-                        disabled={page !== members + 1}
+                        disabled={page !== members}
                         onClick={handleSubmit} >
                         Submit
                     </button>

@@ -39,7 +39,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div id={Style.footerInstagram}>
-                  <a href="google.com">
+                  <a href="https://www.instagram.com/thecodebreakers/">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </div>

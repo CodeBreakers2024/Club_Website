@@ -6,7 +6,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     color: #f1f1f1; 
-    min-height: 90vh;
+    /* min-height: 90vh; */
 }
 
 .title {
@@ -20,6 +20,7 @@
 .formContainer {
     display: flex;
     flex-direction: column;
+    min-height: 50vh;
 }
 
 .formLabel {

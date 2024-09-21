@@ -15,19 +15,19 @@ const events = [
     date: "24 FEB 2023",
   },
   {
-    image: CodeDecode,
+    image: fizzbuzz,
     title: "Code Decode",
     description: "Bring out desired output from a buggy code",
     date: "13 MAY 2023",
   },
   {
-    image: BreakTheCode,
+    image: fizzbuzz,
     title: "Break The Code 4.0",
     description: "description of the event",
     date: "26 NOV 2023",
   },
   {
-    image: HackSphere,
+    image: fizzbuzz,
     title: "HackSphere",
     description: "An 8 hour long hackathon, first of it's kind in the college.",
     date: "16 JAN 2024",

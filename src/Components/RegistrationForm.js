@@ -110,6 +110,7 @@ const RegistrationForm = () => {
 
     const saveMessages = (teamData) => {
         const newContactForm = contactFormDB.push();
+        // const newContactForm = null;
         newContactForm.set(teamData);
     };
 
@@ -117,6 +118,7 @@ const RegistrationForm = () => {
         e.preventDefault();
 
         const allDataSnapshot = await contactFormDB.once("value");
+        // const allDataSnapshot = null;
         const allData = allDataSnapshot.val();
 
         let emails = [];

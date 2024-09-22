@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 300px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0px 10px 10px;
+}
+
+.section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    justify-content: flex-start;
+}
+
+.card {
+    height: 200px;
+    width: clamp(50%, 80%, 450px);
+}
+
+.section hr {
+    height: 3px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    width: 6%;
+}
+
+.longRod {
+    position: relative;
+    right: 60px;
+    border: 3px solid rgb(255, 255, 255);
+    height: 100%;
+}
+
+
+@media (max-width:750px) {
+
+    .container{
+        padding-left: 60px 0px 10px 5px;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+    }
+
+    .section:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section hr{
+        width: 3%;
+    }
+}
+
+.opacity0{
+    animation: disappear 0.1s forwards forwards;
+    -webkit-animation: disappear 0.1s forwards forwards;
+}
+
+@keyframes disappear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}

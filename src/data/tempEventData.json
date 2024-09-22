@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Tech Innovation Summit",
+    "description": "A global summit focused on the latest trends and innovations in technology.",
+    "dates": "2024-10-15 to 2024-10-17",
+    "entryFees": "$500",
+    "isActive": true,
+    "image": "/profiles/event/fizzbuzz.jpg",
+    "teamSize": 5,
+    "left": 10
+  },
+  {
+    "name": "Health & Wellness Expo",
+    "description": "An expo dedicated to holistic health, wellness, and alternative medicine.",
+    "dates": "2024-11-05 to 2024-11-07",
+    "entryFees": "$200",
+    "isActive": true,
+    "image": "/profiles/event/fizzbuzz.jpg",
+    "teamSize": 2,
+    "left": 25
+  },
+  {
+    "name": "Annual Charity Marathon",
+    "description": "A marathon event aimed at raising funds for local charities and non-profits.",
+    "dates": "2024-12-01",
+    "entryFees": "$100",
+    "isActive": false,
+    "image": "/profiles/event/fizzbuzz.jpg",
+    "teamSize": 1,
+    "left": 0
+  },
+  {
+    "name": "Music Festival Extravaganza",
+    "description": "A three-day festival celebrating diverse music genres from all around the world.",
+    "dates": "2025-01-20 to 2025-01-22",
+    "entryFees": "$300",
+    "isActive": true,
+    "image": "/profiles/event/fizzbuzz.jpg",
+    "teamSize": 4,
+    "left": 15
+  },
+  {
+    "name": "Startup Pitch Competition",
+    "description": "A competition where startups pitch their innovative ideas to investors and experts.",
+    "dates": "2025-02-10",
+    "entryFees": "$150",
+    "isActive": true,
+    "image": "/profiles/event/fizzbuzz.jpg",
+    "teamSize": 3,
+    "left": 8
+  }
+]

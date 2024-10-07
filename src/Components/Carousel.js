@@ -16,17 +16,7 @@ const Carousel = () => {
 
   return (
     <div className={styles.carouselContainer}>
-      <Slider {...settings}>
-          <div>
-            <img className={styles.carouselImage} src={team_img} alt="Slide 1" />
-          </div>
-          <div>
-            <img className={styles.carouselImage} src={team_img} alt="Silde 2" />
-          </div>
-          <div>
-            <img className={styles.carouselImage} src={team_img} alt="Silde 3" />
-          </div>
-      </Slider>
+      <img className={styles.carouselImage} src={team_img} alt="Carousel Image" />
     </div>
   );
 };

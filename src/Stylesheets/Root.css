@@ -17,6 +17,10 @@
     --svggradient: rgba(0, 138, 198, 1), rgba(0, 224, 255, 1), rgba(5, 85, 240, 1);
     --dropshadows: 4px 7px 100px 0px rgba(3, 225, 255, 0.25);
     --bordercolor: #00FFFF;
+    --boxShadow: rgba(0, 255, 255, 0.4);
+    --scrollBar1: rgb(0, 239, 239);
+    --scrollBar2: rgb(0, 49, 49);
+    --scrollbar: linear-gradient(to top right, var(--scrollBar1), var(--scrollBar2));;
     --font:"Sora", sans-serif;
 }
 
@@ -34,13 +38,13 @@ body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
     -webkit-appearance: none;
 }
 
 @media screen and (max-width: 432px){
-    ::-webkit-scrollbar{
+    body::-webkit-scrollbar{
         display: none;
         -webkit-appearance: none;
     }

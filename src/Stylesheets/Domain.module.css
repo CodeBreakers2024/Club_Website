@@ -98,7 +98,8 @@
     font-weight: 500;
     font-size: 1.5rem;
     text-align: justify;
-    overflow: scroll;
+    overflow: none;
+    padding: 1rem;
 }
 
 @media (max-width: 1200px) {

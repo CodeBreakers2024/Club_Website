@@ -27,14 +27,14 @@ const Footer = () => {
               </div>
               <div id={Style.footerTerms}>
                 <ul>
-                  <li><a href="google.com">Terms</a></li>
-                  <li><a href="google.com">Privacy</a></li>
-                  <li><a href="google.com">Cookies</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Cookies</a></li>
                 </ul>
               </div>
               <div id={Style.footerSocial}>
                 <div id={Style.footerLinkedin}>
-                  <a href="google.com">
+                  <a href="https://www.linkedin.com/company/thecodebreakers-rcoem">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
                 </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div id={Style.footerX}>
-                  <a href="google.com">
+                  <a href="#">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </div>

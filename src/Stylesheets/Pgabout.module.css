@@ -1,0 +1,93 @@
+.bgimage {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Type animation */
+.h2::after{
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* type animation ends */
+
+.contianer {
+  background: url("../Assets/about-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contianer::before {
+  content: '';
+  position: absolute;
+  background-color: #3D424A60;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.h2 {
+  color: white;
+  font-size: 5rem;
+  z-index: 100;
+  text-align: center;
+}
+
+.para {
+  max-width: 40rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.08rem;
+  color: #ffffff;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 3rem;
+  }
+  .contianer {
+    height: 80vh;
+    width:100%;
+  }
+  .para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contianer {
+    height: 80vh;
+    width:100%;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+}

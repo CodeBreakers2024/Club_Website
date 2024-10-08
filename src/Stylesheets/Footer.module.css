@@ -1,0 +1,134 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer{
+  height: 25vw;
+  width: 100vw;
+  background-color: #1A1E1E;
+  opacity: 97%;
+  position: relative;
+}
+
+#footerContent{
+  height: 20vw;
+  width: 100vw;
+  background-color: #078888;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center; 
+}
+
+#footerTitle{
+  display: inline-block;
+  font-size:8vw;
+  font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+
+  background: linear-gradient(to bottom, #078888 0%,#078888 50%, #1A1E1E 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transform: translateY(-50%);
+}
+
+#footerTag{
+  color: white;
+  font-size: 2vw; 
+  margin-top: -6vw;
+}
+
+#footerInfo{
+  color: white;
+  font-size: 2.5vw;
+  margin-top: 3vw;
+  font-weight: 100;
+}
+
+#footerLine{
+  margin-top: 2vw;
+  color: white;
+  font-size: 1vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
+#footerRedirects{
+  margin-top: 2vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: 100;
+}
+
+#footerCopyright{
+  display: flex;
+  opacity: 65%;
+}
+
+#footerCopyrightText{
+  margin-left: 0.5vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+#footerTerms ul{
+  list-style-type: none;
+  font-size: 1.5vw;
+}
+
+#footerTerms li{
+  display: inline-block;
+}
+
+#footerTerms a{
+  text-decoration: none;
+  color: white;
+  padding-right: 1vw;
+  opacity: 65%;
+}
+
+#footerSocial{
+  display: flex;
+  align-items: space-between;
+  
+}
+
+#footerSocial div{
+  width: 3vw;
+  height: 3vw;
+  margin-right: 2vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#footerSocial a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+}
+
+#footerInstagram i{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 0vh;
+}
+
+#footerImage{
+  position: absolute;
+  left: 0;
+  bottom: 0vh;
+  width: 40vw;
+}

@@ -1,4 +1,4 @@
-# Baisc Guidelines
+# Basic Guidelines
 - ⁠clean and readable code
 - ⁠⁠proper comments
 - ⁠⁠maintain code structure 

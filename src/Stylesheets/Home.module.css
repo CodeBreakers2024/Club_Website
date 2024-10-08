@@ -1,0 +1,95 @@
+.headtop{
+    background-image: url('../Assets/Spiralani.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.h1{
+    color: white;
+    font-size: 5rem;
+    background: linear-gradient(
+      270deg,
+      #9bffff 9.26%,
+      #3fffff 27.77%,
+      #6bdbd8 48.19%,
+      #2fbebb 64.52%,
+      #027498 83.12%,
+      #036 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Viga';
+}
+
+.p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'IBM Plex Mono';
+}
+
+@media (max-width: 1200px) {
+    .headtop {
+        width: 100vw;
+    }
+    .p {
+        font-size: 1.75rem; 
+    }
+}
+
+@media (max-width: 990px) {
+    .headtop {
+        width: 100vw;
+        height: 90vh;
+    }
+    .h1 {
+        font-size: 4rem;
+    }
+    .p {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 836px) {
+    .headtop {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .h1 {
+        font-size: 3rem; 
+    }
+
+    .p {
+        font-size: 1.25rem; 
+    }
+}
+@media  (max-width: 770px) {
+    .headtop {
+        width: 100vw;
+        height: 60vh;
+    }
+}
+@media (max-width: 500px) {
+    .headtop {
+        width: 100vw;
+        height: 50vh;
+    }
+    .h1 {
+        font-size: 2rem; 
+    }
+
+    .p {
+        font-size: 1rem; 
+    }
+}

@@ -1,0 +1,118 @@
+#whatWeDo {
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head {
+    height: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headText {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 89%;
+    color: var(--secondarytext);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.WeDoCards {
+    height: 98%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards{
+    width: 90%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    grid-template-rows: repeat(2, 0.8fr);
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+    place-items: center;
+}
+
+.cards>div{
+    height: 80%;
+    width: 86%;
+    border-bottom: 7px solid var(--bordercolor);
+    background-color: var(--cardcolor);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    overflow: hidden;
+    transition: all 0.3s ;
+}
+
+.cards>div:hover{
+    transform: scale(1.1);
+
+}
+
+.card > .icon{
+    height: 37%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > .name{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--secondarytext);
+
+}
+
+.card > .description{
+    padding: 2%;
+    height: 50%;
+    width: 80%;
+    border-top: 1px solid #748c96;
+    display: flex;
+    justify-content: center;
+    color: var(--tertiarytext);
+
+}
+
+@media only screen and (max-width: 768px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        height: 100%;
+    }
+    
+    .description {
+
+        overflow: auto;
+    }
+}

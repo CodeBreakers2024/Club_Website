@@ -4,11 +4,12 @@
 }
 
 #footer{
-  height: 25vw;
+  height: 27vw;
   width: 100vw;
   background-color: #1A1E1E;
   opacity: 97%;
   position: relative;
+  margin-top: 7.5vw;
 }
 
 #footerContent{
@@ -37,13 +38,13 @@
 #footerTag{
   color: white;
   font-size: 2vw; 
-  margin-top: -6vw;
+  margin-top: -5vw;
 }
 
 #footerInfo{
   color: white;
   font-size: 2.5vw;
-  margin-top: 3vw;
+  margin-top: 2vw;
   font-weight: 100;
 }
 
@@ -128,7 +129,8 @@
 
 #footerImage{
   position: absolute;
-  left: 0;
+  left: 0vh;
   bottom: 0vh;
-  width: 40vw;
+  width: 25vw;
+  height: auto;
 }

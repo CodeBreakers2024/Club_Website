@@ -22,6 +22,7 @@
     font-weight:bolder;
     font-size: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .WeDoCards {
@@ -53,6 +54,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    
 }
 
 .card > .icon{
@@ -63,6 +65,7 @@
     align-items: center;
     margin-top: 1.5em;
     padding: 1rem;
+    transition: filter 0.4s ease-out;
 }
 
 .card > .name{
@@ -83,7 +86,6 @@
     display: flex;
     justify-content: center;
     color: var(--tertiarytext);
-
 }
 
 .card > .icon:hover {

@@ -9,7 +9,7 @@ function Homepage() {
   return (
     <>
       <Home />
-      <Carousel />
+      {/* <Carousel /> */}
       <Cards />
       <Domains />
       <BottomCarousel />

@@ -1,15 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
 
+
+
 .container {
   display: flex;
   justify-content: center;
   color: white;
   font-family: "DM Mono", monospace;
+  
 }
 
 .link {
   text-decoration: none;
 }
+
+.horizontal_scroll {
+  padding:10px;
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of content */
+  max-width: 100%; /* Set a max width for the container */
+}
+
+.horizontal_scroll::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+.horizontal_scroll::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.horizontal_scroll::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+
+
+/* Firefox */
+.horizontal_scroll {
+  scrollbar-width: thin; /* Make the scrollbar thinner */
+  scrollbar-color: #201c29 #17141d; /* Thumb color and track color for dark mode */
+}
+
+.horizontal_scroll.card_list_light {
+  scrollbar-color: #000000 #ebebeb; /* Thumb color and track color for light mode */
+}
+
+
+
+
 
 .card_list,
 .card_list_light {
@@ -17,12 +60,19 @@
   padding: 3rem;
   padding-left: 2.5rem;
   overflow-x: scroll;
+  margin-bottom: 10px;
+}
+
+.card_list {
+  scrollbar-width: thin;   
+  
+  scrollbar-color: white #201c29 ;    
 }
 
 .card_list::-webkit-scrollbar,
 .card_list_light::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
 .card_list_light::-webkit-scrollbar-thumb {
   background: #000000;
@@ -37,12 +87,12 @@
     inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* .card_list_light::-webkit-scrollbar-track {
+.card_list_light::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #ffffff, #dbdbdb 1px, #ececec 0, #ebebeb);
 }
 .card_list::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-} */
+}
 
 .expand {
   overflow: hidden;
@@ -94,17 +144,16 @@
 .card:hover .office_h2,
 .card_light:hover .office_h2 {
   transform: translateY(0rem);
-  background: linear-gradient(90deg, #008080, #00b3b3);
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-
+/* 
 .card_header {
-  display: flex;
-  flex-direction: column;
-}
+  margin-bottom: auto;
+} */
 
 .office_names {
   color: rgb(207, 207, 207);
@@ -147,7 +196,7 @@
 
 .profile_name:hover,
 .profile_name_light:hover {
-  background: linear-gradient(90deg, #008080, #00b3b3);
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -304,7 +353,7 @@
 
 .social_icon:hover,
 .social_icon_light:hover {
-  background: linear-gradient(90deg, #008080, #00b3b3);
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

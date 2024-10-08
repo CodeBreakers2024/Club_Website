@@ -26,130 +26,160 @@
     },
     "members": [
       {
-        "name": "Mushan Khan",
+        "name": "Harsh Diwase",
         "position": "President",
-        "alt": "Mushan",
-        "profilePic": "/profiles/Core/mushan.jpg",
+        "alt": "Harsh",
+        "profilePic": "/profiles/Core/Harsh.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/harsh-diwase-54a964226/",
           "instagram": "https://instagram.com/harshdiwase?igshid=OGQ5ZDc2ODk2ZA=="
         }
       },
       {
-        "name": "Netal Sarda",
+        "name": "Muskan Jaiswal",
         "position": "Vice President",
-        "alt": "Netal ",
-        "profilePic": "/profiles/Core/netal.jpg",
+        "alt": "Muskan ",
+        "profilePic": "/profiles/Core/Muskan.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/muskan-jaiswal-80317122b/",
           "instagram": "https://instagram.com/muskanjaiswal_03?igshid=NGVhN2U2NjQ0Yg=="
         }
       },
       {
-        "name": "Suyog Parkhi",
+        "name": "Naman Sarda",
         "position": "Technical Lead",
-        "alt": "Suyog ",
-        "profilePic": "/profiles/Core/suyog.jpg",
+        "alt": "Naman",
+        "profilePic": "/profiles/Core/Naman.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/naman-sarda-10a17622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://instagram.com/naman_sarda07?igshid=OGQ5ZDc2ODk2ZA=="
         }
       },
       {
-        "name": "Anas Khan",
+        "name": "Suyog Parkhi",
         "position": "Technical Co-Lead",
-        "alt": "Anas ",
-        "profilePic": "/profiles/Core/anas.png",
+        "alt": "Suyog ",
+        "profilePic": "/profiles/Core/Suyog.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/suyog-parkhi-b03980247/",
           "instagram": "https://www.instagram.com/suyogparkhi/"
         }
       },
       {
-        "name": "Tejas Tatode",
+        "name": "Kunal Dewangan",
+        "position": "Event Lead",
+        "alt": "Kunal",
+        "profilePic": "/profiles/Core/Kunal.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kunal-dewangan-22ba4124b/",
+          "instagram": "https://www.instagram.com/k_u_n_a_l__45/"
+        }
+      },
+      {
+        "name": "Netal Sarda",
         "position": "Event Co-Lead",
-        "alt": "Tejas",
-        "profilePic": "/profiles/Core/tejas.jpg",
+        "alt": "Netal",
+        "profilePic": "/profiles/Core/Netal.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/netal-sarda-7b6810258",
           "instagram": "https://instagram.com/netal_sarda11?igshid=MzRlODBiNWFlZA=="
         }
       },
       {
-        "name": "Lavanya Chawla ",
+        "name": "Mushan Khan",
         "position": "Content Lead ",
         "alt": "Mushan",
-        "profilePic": "/profiles/Core/lavanya.jpg",
+        "profilePic": "/profiles/Core/Mushan.jpeg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/mushan-khan-65140b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://instagram.com/mushan_khan_22?igshid=MzMyNGUyNmU2YQ=="
         }
       },
       {
-        "name": "Aakarsh Verma",
+        "name": "Manas Bhardwaj",
         "position": "Content Co-Lead ",
         "alt": "Manas",
-        "profilePic": "/profiles/Core/aakarsh.jpg",
+        "profilePic": "/profiles/Core/Manas.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/manas-bhardwaj-621141298/",
           "instagram": "https://www.instagram.com/manasbhardwaj18/"
         }
       },
       {
-        "name": "Isha Ahuja",
-        "position": "Marketing Lead",
+        "name": "Rushabh Singwi",
+        "position": "Public Relations and Marketing Lead",
         "alt": "Rushabh",
-        "profilePic": "/profiles/Core/isha.jpg",
+        "profilePic": "/profiles/Core/Rushabh1.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/rushabh-singwi-4917b0225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://www.instagram.com/uniquely_absurd/#"
         }
       },
       {
-        "name": "Kshirin Modi",
-        "position": "Marketing Co-Lead",
+        "name": "Tushar Pamnani",
+        "position": "Public Relations and Marketing Co-Lead",
         "alt": "Tushar",
-        "profilePic": "/profiles/Core/kshirin.jpg",
+        "profilePic": "/profiles/Core/Tushar.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/tushar-pamnani",
           "instagram": "https://www.instagram.com/tusharpamnani.me/"
         }
       },
       {
-        "name": "Rohan Keshkar",
+        "name": "Anirudh Pawar",
+        "position": "Public Relations and Marketing Co-Lead",
+        "alt": "Anirudh",
+        "profilePic": "/profiles/Core/AnirudhP.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/anirudh-pawar-120396250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://instagram.com/itz_anirudhp?igshid=OGQ5ZDc2ODk2ZA=="
+        }
+      },
+      {
+        "name": "Nupur Hada",
         "position": "Graphics Lead",
         "alt": "Nupur",
-        "profilePic": "/profiles/Core/Rohan.jpg",
+        "profilePic": "/profiles/Core/Nupur.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/nupur-hada-a5517222b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://instagram.com/nupur_hada.25?igshid=OGQ5ZDc2ODk2ZA=="
         }
       },
       {
-        "name": "Sakshi Mude",
+        "name": "Srishti Mangalam",
         "position": "Graphics Co-Lead",
         "alt": "Srishti",
-        "profilePic": "/profiles/Core/sakshi.jpg",
+        "profilePic": "/profiles/Core/Srishti.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/srishti-mangalam-08074b247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://instagram.com/miss_mistless?igshid=OGQ5ZDc2ODk2ZA=="
         }
       },
       {
-        "name": "Devansh Dua",
+        "name": "Rohan Dhote",
+        "position": "Graphics Co-Lead",
+        "alt": "Rohan",
+        "profilePic": "/profiles/Core/Rohan.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/rohan-dhote-a70703206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://instagram.com/sambar.vada28?igshid=MzMyNGUyNmU2YQ=="
+        }
+      },
+      {
+        "name": "Vidhi Rathi",
         "position": "Social Media Lead",
         "alt": "Vidhi",
-        "profilePic": "/profiles/Core/dev.jpg",
+        "profilePic": "/profiles/Core/Vidhi.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/vidhi-rathi-222557223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "instagram": "https://instagram.com/vidhirathi31?igshid=NGVhN2U2NjQ0Yg=="
         }
       },
       {
-        "name": "Adnan Dalal",
+        "name": "Samiksha Agrawal",
         "position": "Social Media Co-Lead",
         "alt": "Tushar",
-        "profilePic": "/profiles/Core/adnan.jpg",
+        "profilePic": "/profiles/Core/Samiksha.jpg",
         "socials": {
           "linkedin": "https://www.linkedin.com/in/samiksha-agrawal-46a637275/",
           "instagram": "https://www.instagram.com/bansal_samiksha24/"

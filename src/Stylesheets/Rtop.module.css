@@ -1,100 +1,140 @@
-body{
-    height: 100%;
-}
-
 .rTop {
-    height: 55vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10rem;
-    margin-top:15vh ;
+    padding: 4rem 0;
 }
 
 .head {
-    height: 8vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: larger;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 0.7px;
     color: whitesmoke;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .wrap {
-    height: 85vh;
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .topCard {
-    border-radius: 20px;
-    height: 70vh;
-    width: 19vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.178);
-    transition: all 0.2s;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.topCard:hover {
+    transform: translateY(-10px);
 }
 
 .proDetails {
     height: 100%;
-    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.preview {
+    height: 60%;
     overflow: hidden;
+    position: relative;
 }
 
-.proDetails>img {
-    height: 100%;
+.projectIframe {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.3s ease;
 }
 
-.wrap>div:hover {
-    transform: scaleY(1.1);
-    width: 30%;
+.topCard:hover .projectIframe {
+    transform: scale(1.1);
 }
 
-@media screen and (max-width: 1000px) {
-    .rTop{
-        margin-top: 0vh;
-        height: 90vh;
+.content {
+    height: 40%;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95));
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: auto;
+}
+
+.techItem {
+    font-size: 0.75rem;
+    color: #4fd1c5;
+    background: rgba(79, 209, 197, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.2s ease;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        grid-template-columns: 1fr;
     }
-    .wrap{
-        height:84vh;
-        width: 97%;
-        display:flex;
-        column-gap: 4px;
+    
+    .topCard {
+        height: 350px;
     }
-    .topCard{
-        height: 100%;
-        width: 20vw;
-        flex-grow: 4;
-        flex-shrink: 5;
-        transform: none;
-    }
-    .topCard:not(.topCard:hover){
-        flex:1;
-    }
-    .topCard:hover{
-        flex:20;
-        height: 100%;
-        width: 90vw;
-        transform: none;
-    }
-    .head{
-        padding: 5px;
-        height:5vh;
+
+    .head {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 }

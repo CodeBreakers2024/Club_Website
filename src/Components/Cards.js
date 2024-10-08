@@ -1,96 +1,49 @@
 import React from "react";
+import { motion } from "framer-motion";
+import styles from "../Stylesheets/Cards.module.css";
 
+// Import all images
 import EventsIcon from "../Assets/Events.png";
-import UpskillIcon from "../Assets/Upskill.png";
 import ProjectsIcon from "../Assets/Projects.png";
+import UpskillIcon from "../Assets/Upskill.png";
+import NetworkingIcon from "../Assets/Networking.png";
 import MentorshipIcon from "../Assets/Mentorship.png";
 import VisionIcon from "../Assets/Vision.png";
-import NetworkingIcon from "../Assets/Networking.png";
 
-// import eventsIcon from "../Assets/events.svg";
-// import projectsIcon from "../Assets/projects.svg";
-// import upskillIcon from "../Assets/upskill.svg";
-// import communityIcon from "../Assets/community.svg";
-// import mentorshipIcon from "../Assets/mentorship.svg";
-// import eyeopenIcon from "../Assets/vision.svg";
-
-import Style from "../Stylesheets/Cards.module.css";
+const cardData = [
+  { icon: EventsIcon, name: "Events", description: "Check out the events lined up for you and join what you like. We would love for you to engage with us!" },
+  { icon: ProjectsIcon, name: "Projects", description: "Explore your interests by building projects. For more inspiration, look into some of the most interesting projects that we have already worked on." },
+  { icon: UpskillIcon, name: "Upskill", description: "Widen your horizons and work on anything that interests you! Continue to improve with the help of the community. We got your back!" },
+  { icon: NetworkingIcon, name: "Community", description: "Get to know the family! We would love to interact with you ;" },
+  { icon: MentorshipIcon, name: "Mentorship", description: "We have arranged diverse platforms for you to ping us with your doubts. Feel free to reach out to us on any of these platforms." },
+  { icon: VisionIcon, name: "Vision", description: "Enabling any student, from any department, from any background, to learn and love programming, to an extent where they can step up to teach others" },
+];
 
 const Cards = () => {
   return (
-    <>
-      <section id={Style.whatWeDo}>
-        <div className={Style.head}>
-          <div className={Style.headText}>What Defines Us</div>
-        </div>
-        <div className={Style.WeDoCards}>
-          <div className={Style.cards}>
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={UpskillIcon} alt="" />
+    <section className={styles.whatWeDo}>
+      <h2 className={styles.sectionTitle}>What Defines Us</h2>
+      <div className={styles.cardsContainer}>
+        {cardData.map((card, index) => (
+          <motion.div
+            key={index}
+            className={styles.card}
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <div className={styles.cardInner}>
+              <div className={styles.cardFront}>
+                <img src={card.icon} alt="" className={styles.cardIcon} />
+                <h3 className={styles.cardName}>{card.name}</h3>
               </div>
-              <div className={Style.name}>Events</div>
-              <div className={Style.description}>
-                Check out the events lined up for you and join what you like. We
-                would love for you to engage with us!
-              </div>
-            </div>
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={ProjectsIcon} alt="" />
-              </div>
-              <div className={Style.name}>Projects</div>
-              <div className={Style.description}>
-                Explore your interests by building projects. For more
-                inspiration, look into some of the most interesting projects
-                that we have already worked on.
-              </div>
-            </div>{" "}
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={MentorshipIcon} alt="" />
-              </div>
-              <div className={Style.name}>Upskill</div>
-              <div className={Style.description}>
-                Widen your horizons and work on anything that interests you!
-                Continue to improve with the help of the community. We got your
-                back!
-              </div>
-            </div>{" "}
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={VisionIcon} alt="" />
-              </div>
-              <div className={Style.name}>Community</div>
-              <div className={Style.description}>
-                Get to know the family! We would love to interact with you ;
-              </div>
-            </div>{" "}
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={EventsIcon} alt="" />
-              </div>
-              <div className={Style.name}>Mentorship</div>
-              <div className={Style.description}>
-                We have arranged diverse platforms for you to ping us with your
-                doubts. Feel free to reach out to us on any of these platforms.
-              </div>
-            </div>{" "}
-            <div className={Style.card}>
-              <div className={Style.icon}>
-                <img src={NetworkingIcon} alt="" />
-              </div>
-              <div className={Style.name}>Vision</div>
-              <div className={Style.description}>
-                Enabling any student, from any department, from any background,
-                to learn and love programming, to an extent where they can step
-                up to teach others
+              <div className={styles.cardBack}>
+                <p className={styles.cardDescription}>{card.description}</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </>
+          </motion.div>
+        ))}
+      </div>
+    </section>
   );
 };
 

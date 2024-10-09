@@ -47,7 +47,9 @@ const ProfileCard = ({
               target="_blank"
               rel="noreferrer"
               className={`fab fa-linkedin ${styles.social_icon}`}
-            ></a>
+            >
+              <span className={styles.visually_hidden}>LinkedIn profile of {name}</span>
+            </a>
           )}
           {socials.instagram && (
             <a
@@ -55,7 +57,9 @@ const ProfileCard = ({
               target="_blank"
               rel="noreferrer"
               className={`fab fa-instagram ${styles.social_icon}`}
-            ></a>
+            >
+              <span className={styles.visually_hidden}>Instagram profile of {name}</span>
+            </a>
           )}
         </div>
       </div>

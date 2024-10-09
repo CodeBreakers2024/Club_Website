@@ -44,7 +44,7 @@ function PgAbout() {
     <div 
       ref={scrollContainerRef}
       style={{
-        minHeight: "100vh",
+        Height: "100vh",
         width: "100%",
         overflowY: "auto",
       }}

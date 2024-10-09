@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../Stylesheets/Bottomc.module.css"
 import team_img from "../Assets/team.jpg"
+import c1 from "../Assets/c1.jpeg"
+import c2 from "../Assets/c2.jpeg"
 
 const BottomCarousel = () => {
   const settings = {
@@ -24,11 +26,11 @@ const BottomCarousel = () => {
 
         <Slider {...settings}>
             <div>
-              <img className={styles.carouselImage} src={team_img} alt="Slide 1" />
+              <img className={styles.carouselImage} src={c1} alt="Slide 1" />
             </div>
 
             <div>
-              <img className={styles.carouselImage} src={team_img} alt="Silde 2" />
+              <img className={styles.carouselImage} src={c2} alt="Silde 2" />
             </div>
 
             <div>
@@ -37,7 +39,7 @@ const BottomCarousel = () => {
         </Slider>
 
         <div className={styles.message}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p>One Family !!!</p>
         </div>
       </div>
     </div>

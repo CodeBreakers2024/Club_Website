@@ -11,6 +11,8 @@
 }
 
 
+
+
 #domains .content   {
     width: 100vw;
     margin: auto;
@@ -91,6 +93,7 @@
     text-align: start;
     border-bottom: 1px solid var(--bordercolor);
     padding: 4px;
+    font-size:x-large;
 }
 
 .card > p {

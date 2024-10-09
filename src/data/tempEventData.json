@@ -1,52 +1,30 @@
 [
   {
-    "name": "Tech Innovation Summit",
-    "description": "A global summit focused on the latest trends and innovations in technology.",
-    "dates": "2024-10-15 to 2024-10-17",
-    "entryFees": "$500",
-    "isActive": true,
-    "image": "/profiles/event/fizzbuzz.jpg",
-    "teamSize": 5,
-    "left": 10
-  },
-  {
-    "name": "Health & Wellness Expo",
-    "description": "An expo dedicated to holistic health, wellness, and alternative medicine.",
-    "dates": "2024-11-05 to 2024-11-07",
-    "entryFees": "$200",
-    "isActive": true,
-    "image": "/profiles/event/fizzbuzz.jpg",
-    "teamSize": 2,
-    "left": 25
-  },
-  {
-    "name": "Annual Charity Marathon",
-    "description": "A marathon event aimed at raising funds for local charities and non-profits.",
-    "dates": "2024-12-01",
-    "entryFees": "$100",
+    "name": "Fizzbuzz 2.0",
+    "description": "A thrilling three-round event featuring a buzzer round, aptitude-based object hunt, and a competitive programming challenge.",
+    "dates": "25 SEPTEMBER 2024",
     "isActive": false,
-    "image": "/profiles/event/fizzbuzz.jpg",
-    "teamSize": 1,
-    "left": 0
+    "image": "/profiles/event/fizzbuzz.jpg"
   },
   {
-    "name": "Music Festival Extravaganza",
-    "description": "A three-day festival celebrating diverse music genres from all around the world.",
-    "dates": "2025-01-20 to 2025-01-22",
-    "entryFees": "$300",
+    "name": "Web3 & Stellar",
+    "description": "An insightful web-3 seminar exploring the fundamentals and future potential of decentralized technology",
+    "dates": "18 MARCH 2024",
     "isActive": true,
-    "image": "/profiles/event/fizzbuzz.jpg",
-    "teamSize": 4,
-    "left": 15
+    "image": "/profiles/event/Web3.jpg"
   },
   {
-    "name": "Startup Pitch Competition",
-    "description": "A competition where startups pitch their innovative ideas to investors and experts.",
-    "dates": "2025-02-10",
-    "entryFees": "$150",
+    "name": "Hacksphere",
+    "description": "A successful intra-college hackathon where first-year innovators showcased their skills and creativity.",
+    "dates": "14-16 JANUARY 2024",
     "isActive": true,
-    "image": "/profiles/event/fizzbuzz.jpg",
-    "teamSize": 3,
-    "left": 8
+    "image": "/profiles/event/HackSphere.jpg"
+  },
+  {
+    "name": "CodeBlaze",
+    "description": "Debug it to bid it! Fix bugs in Round 1, then wager your points on coding challenges in Round 3!",
+    "dates": "13-15 MAY 2023",
+    "isActive": false,
+    "image": "/profiles/event/CodeBlaze.jpg"
   }
 ]

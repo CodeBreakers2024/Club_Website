@@ -1,47 +1,24 @@
 import React from "react";
-import styles from "../Stylesheets/Card.module.css"
+import styles from "../Stylesheets/Events-Card.module.css";
 
-function Card(props) {
+const Card = (props) => {
+  const { name, description, dates, image, alignment } = props.data;
 
-  const {
-    name,
-    description,
-    dates,
-    entryFees,
-    isActive,
-    image,
-    teamSize,
-  } = props.data;
-
+  // Determine alignment class (left or right)
+  const alignmentClass = alignment === "right" ? styles.right : styles.left;
 
   return (
-    <div className={styles.container}>
-      <img
-        className={styles.background}
-        src={image}
-        alt=""
-      />
-      <h1 className={styles.heading}>{name}</h1>
-      <div className={styles.contents}>
-        <div className={styles.description}>
-          <h2>Description</h2>
-          <p>
-            {description?.length > 400
-              ? description.substring(0, 400) + "..."
-              : description}
-          </p>
+    <div className={`${alignmentClass}`}>
+      <div className={`${styles.card}`}>
+        <div className={styles.imageCard}>
+          <p className={styles.eventDate}>{dates}</p>
+          <img className={styles.eventImage} src={image} alt={name} />
         </div>
-        <div className={styles.detailSection}>
-          <div className={styles.details}>
-            <span>Date - {dates}</span>
-            <span>Fees - {entryFees} </span>
-            <span>Team Size - {teamSize}</span>
-          </div>
-          {isActive ? <button>Register</button> : <p>Event Has Ended</p>}
-        </div>
+        {/* <h3 className={styles.eventTitle}>{name}</h3> */}
+        <p className={styles.eventDescription}>{description}</p>
       </div>
     </div>
   );
-}
+};
 
 export default Card;

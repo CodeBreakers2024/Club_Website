@@ -1,0 +1,101 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Container for left and right alignment */
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse; /* Reverse the flex for right alignment */
+}
+
+/* Main card container */
+.card {
+  border-radius: 8px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none; /* No shadow */
+}
+
+/* Image and date container side by side */
+.imageCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 15px; /* Add gap between date and image */
+}
+
+.right .imageCard{
+  flex-direction: row-reverse; /* Reverse the flex for right alignment */
+}
+
+/* Event date styling, displayed vertically using flex */
+.eventDate {
+  font-size: 1rem; /* Adjust font size */
+  color: white; /* White text color for date and time */
+  writing-mode: vertical-lr; /* Makes the text appear vertically */
+  transform: rotate(180deg); /* Rotates the text to ensure it goes bottom-to-top */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-weight: 700; /* Make the font bold */
+  letter-spacing: 2px; /* Add some letter spacing for a cleaner look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right-aligned date */
+.right .eventDate {
+  transform: rotate(360deg);
+}
+
+/* Event image styling */
+.eventImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Event description at the bottom */
+.eventDescription {
+  font-size: 1rem;
+  color: white;
+  /* color: #333; */
+  line-height: 1.5;
+  text-align: center;
+  word-break: break-word;
+}
+
+.right .eventDescription{
+  padding-right: 10%;
+}
+.left .eventDescription{
+  padding-left: 10%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 750px) {
+  .card {
+    max-width: 100%; /* Allow the card to take full width on smaller screens */
+    padding: 10px;
+  }
+
+  .imageCard {
+    width: 80%;
+  }
+
+  .eventDate {
+    font-size: 0.8rem; /* Adjust the font size for smaller screens */
+  }
+}

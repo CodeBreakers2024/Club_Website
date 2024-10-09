@@ -42,6 +42,7 @@ function EventItem({
                 isActive,
                 image,
                 teamSize,
+                alignment: left && !isPhone ? "left" : "right", // Dynamically pass alignment based on 'left'
               }}
             />
             <hr />
@@ -70,6 +71,8 @@ function EventItem({
                 isActive,
                 image,
                 teamSize,
+                alignment: left && !isPhone ? "left" : "right", // Dynamically pass alignment based on 'left'
+
               }}
             />
           </>

@@ -74,7 +74,7 @@ const DomainCard = ({
             </div>
           </div>
           <div className={styles.tags}>
-            {renderTags()}
+            {/* {renderTags()} */}
           </div>
         </>
       )}

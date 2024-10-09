@@ -41,11 +41,11 @@ const NavBar = () => {
                 <MediaQuery minWidth={breakPoint}>
                 <nav className={Style.visibleOnLargeScreen}>
                     <ul className={Style.list}>
-                        <li><Link to={"/"} className={path.pathname=="/" ? Style.active : ""}>Home</Link></li>
-                        <li><Link to={"/about"} className={path.pathname=="/about" ? Style.active : ""}>About</Link></li>
-                        <li><Link to={"/achievements"} className={path.pathname=="/achievements" ? Style.active : ""}>Achievements</Link></li>
-                        <li><Link to={"/events"} className={path.pathname=="/events" ? Style.active : ""}>Events</Link></li>
-                        <li><Link to={"/resources"} className={path.pathname=="/resources" ? Style.active : ""}> Resources </Link></li>
+                        <li><Link to={"/"} className={path.pathname==="/" ? Style.active : ""}>Home</Link></li>
+                        <li><Link to={"/about"} className={path.pathname==="/about" ? Style.active : ""}>About</Link></li>
+                        <li><Link to={"/achievements"} className={path.pathname==="/achievements" ? Style.active : ""}>Achievements</Link></li>
+                        <li><Link to={"/events"} className={path.pathname==="/events" ? Style.active : ""}>Events</Link></li>
+                        <li><Link to={"/resources"} className={path.pathname==="/resources" ? Style.active : ""}> Resources </Link></li>
                         {/* <li><Link to={"/register"} className={path.pathname=="/register" ? Style.active : ""}> Register </Link></li> */}
                     </ul>
                 </nav>   

@@ -12,7 +12,7 @@ const Footer = () => {
       <div id={Style.footerContent}>
         <p id={Style.footerTitle}>CODEBREAKERS</p>
         <p id={Style.footerTag}>Seasoned. Nimble. Remote.</p>
-        <p id={Style.footerInfo}>Text about club</p>
+        {/* <p id={Style.footerInfo}>Text about club</p> */}
         <hr id={Style.footerLine} />
         <img src={footerIcon} id={Style.footerImage} alt="footer-img" />
         <div id={Style.footerRedirects}>

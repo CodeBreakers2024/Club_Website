@@ -5,7 +5,7 @@ import domains from "../data/Members.json";
 import useTypingEffect from "./typinghook";
 
 function PgAbout() {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
   const [startTyping, setStartTyping] = useState(false);
   const typedText = useTypingEffect("About Us", 150, startTyping); // Modified to accept startTyping
   const typedText1 = useTypingEffect("From preschool to pre-tertiary, our students enjoy fun, interactive and relevant lessons and are empowered to think beyond the confines of the classroom.", 10, startTyping); 

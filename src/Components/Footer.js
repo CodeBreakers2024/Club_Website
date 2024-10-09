@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div id={Style.footerSocial}>
             <div id={Style.footerLinkedin}>
-              <a href="google.com">
+              <a href="https://www.linkedin.com/company/thecodebreakers-rcoem/mycompany/verification/">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
             </div>
             <div id={Style.footerX}>
-              <a href="google.com">
+              <a href="https://x.com/CodebreakersRBU">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </div>

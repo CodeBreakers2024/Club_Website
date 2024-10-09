@@ -208,7 +208,7 @@
 
 .profile_name:hover,
 .profile_name_light:hover {
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  background: linear-gradient(135deg, rgb(0, 77, 64), rgb(0, 121, 107), rgb(0, 150, 136), rgb(38, 166, 154), rgb(77, 182, 172), rgb(128, 203, 196), rgb(178, 223, 219));
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

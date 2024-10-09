@@ -1,59 +1,53 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Style from "../Stylesheets/Pgabout.module.css";
 import Domain from './Domain';
 import domains from "../data/Members.json";
 import useTypingEffect from "./typinghook";
 
-function PgAbout() {
-  const [startTyping, setStartTyping] = useState(false);
-  const typedText = useTypingEffect("About Us", 150, startTyping);
+export default function PgAbout() {
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef(null);
+
+  const typedText = useTypingEffect("About Us", 150, isVisible);
   const typedText1 = useTypingEffect(
     "From preschool to pre-tertiary, our students enjoy fun, interactive and relevant lessons and are empowered to think beyond the confines of the classroom.",
     10,
-    startTyping
+    isVisible
   );
-  const scrollContainerRef = useRef(null);
-
-  const handleScroll = useCallback(() => {
-    if (scrollContainerRef.current) {
-      const { scrollTop, scrollHeight, clientHeight } = scrollContainerRef.current;
-      const position = Math.ceil(
-        (scrollTop / (scrollHeight - clientHeight)) * 100
-      );
-      
-      // Start typing when scroll position is 4 or 5
-      if (position >= 4 && !startTyping) {
-        setStartTyping(true);
-      }
-    }
-  }, [startTyping]);
 
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    if (scrollContainer) {
-      scrollContainer.addEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    );
+
+    const currentRef = containerRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
+
     return () => {
-      if (scrollContainer) {
-        scrollContainer.removeEventListener('scroll', handleScroll);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, [handleScroll]);
+  }, []);
 
   return (
-    <div 
-      ref={scrollContainerRef}
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        overflowY: "auto",
-      }}
-    >
-      <div className={Style.contianer}>
-        <div className={Style.h2}>{typedText}</div>
-        <div className={Style.para}>
-          {typedText1}
-        </div>
+    <div className={Style.pageContainer}>
+      <div ref={containerRef} className={Style.container}>
+        <h2 className={Style.h2}>{typedText}</h2>
+        <p className={Style.para}>{typedText1}</p>
       </div>
       <div className={Style.domains}>
         {domains.map((domain, i) => (
@@ -63,5 +57,3 @@ function PgAbout() {
     </div>
   );
 }
-
-export default PgAbout;

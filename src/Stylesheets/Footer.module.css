@@ -1,53 +1,58 @@
-*{
+* {
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
 }
 
-#footer{
+html, body {
+  height: 100%;
+}
+
+#footer {
   height: 25vw;
   width: 100vw;
   background-color: #1A1E1E;
   opacity: 97%;
   position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-#footerContent{
+#footerContent {
   height: 20vw;
   width: 100vw;
   background-color: #078888;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  text-align: center; 
+  text-align: center;
 }
 
-#footerTitle{
+#footerTitle {
   display: inline-block;
-  font-size:8vw;
+  font-size: 8vw;
   font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
-
-  background: linear-gradient(to bottom, #078888 0%,#078888 50%, #1A1E1E 50%);
+  background: linear-gradient(to bottom, #078888 0%, #078888 50%, #1A1E1E 50%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   transform: translateY(-50%);
 }
 
-#footerTag{
+#footerTag {
   color: white;
-  font-size: 2vw; 
+  font-size: 2vw;
   margin-top: -6vw;
 }
 
-#footerInfo{
+#footerInfo {
   color: white;
   font-size: 2.5vw;
   margin-top: 3vw;
   font-weight: 100;
 }
 
-#footerLine{
+#footerLine {
   margin-top: 2vw;
   color: white;
   font-size: 1vw;
@@ -55,7 +60,7 @@
   margin-right: 12vw;
 }
 
-#footerRedirects{
+#footerRedirects {
   margin-top: 2vw;
   margin-left: 12vw;
   margin-right: 12vw;
@@ -67,40 +72,39 @@
   font-weight: 100;
 }
 
-#footerCopyright{
+#footerCopyright {
   display: flex;
   opacity: 65%;
 }
 
-#footerCopyrightText{
+#footerCopyrightText {
   margin-left: 0.5vw;
   color: white;
   font-size: 1.5vw;
 }
 
-#footerTerms ul{
+#footerTerms ul {
   list-style-type: none;
   font-size: 1.5vw;
 }
 
-#footerTerms li{
+#footerTerms li {
   display: inline-block;
 }
 
-#footerTerms a{
+#footerTerms a {
   text-decoration: none;
   color: white;
   padding-right: 1vw;
   opacity: 65%;
 }
 
-#footerSocial{
+#footerSocial {
   display: flex;
   align-items: space-between;
-  
 }
 
-#footerSocial div{
+#footerSocial div {
   width: 3vw;
   height: 3vw;
   margin-right: 2vw;
@@ -110,23 +114,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-#footerSocial a{
+#footerSocial a {
   text-decoration: none;
   color: black;
   font-size: 1.5vw;
 }
 
-#footerInstagram i{
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding: 0vh;
-}
-
-#footerImage{
+#footerImage {
   position: absolute;
   left: 0;
   bottom: 0vh;

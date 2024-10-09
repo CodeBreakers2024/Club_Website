@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../Stylesheets/Achievement.module.css';
+import fizzTestAward from '../Assets/Fizz-Buzz.jpg'
 
 export default function Achievements() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -31,6 +32,15 @@ export default function Achievements() {
     }
   ];
 
+  const allAwards = [
+    {
+      awardImage: fizzTestAward,
+      description: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore quo beatae consequuntur optio! Architecto voluptas, incidunt nam maiores, ullam dicta sint repudiandae accusamus magnam porro veritatis explicabo, eum sunt."
+      ]
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Our Achievements</h1>
@@ -38,8 +48,8 @@ export default function Achievements() {
 
       <div className={styles.achieversGrid}>
         {achievers.map((achiever, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className={styles.achieverCard}
             onMouseEnter={() => setHoveredCard(index)}
             onMouseLeave={() => setHoveredCard(null)}
@@ -68,6 +78,26 @@ export default function Achievements() {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.awardsContainer}>
+        <div>
+          <h1>Awards</h1>
+        </div>
+        <div className={styles.awardsGrid}>
+          {
+            allAwards.map((data, awardsIndex) => (
+              <div className={styles.awardsHexContain} key={awardsIndex}>
+                <div>
+                  <div className={styles.hexagon} style={{ backgroundImage: `url(${data.awardImage})` }} />
+                </div>
+
+                <div className={styles.awardsDescription}>
+                  <p>{data.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

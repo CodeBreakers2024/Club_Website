@@ -15,6 +15,7 @@
   margin-bottom: 1rem;
   background: linear-gradient(45deg, #47C8C5, #55FFFF);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -114,13 +115,90 @@
   color: #fff;
 }
 
+.awardsContainer {
+  width: 100%;
+  height: fit-content;
+  max-width: 1200px;
+  margin-top: 9%;
+}
+
+.awardsContainer div h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #47C8C5, #55FFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.awardsGrid {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 50px;
+}
+
+.awardsHexContain {
+  border: 2px solid cyan;
+  border-radius: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.hexagon {
+  clip-path: polygon(51% 0, 51% 0, 100% 30%, 100% 70%, 51% 100%, 51% 100%, 0 70%, 0 30%);
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin-top: 12%;
+  transition: all 0.7s ease;
+}
+
+.hexagon:hover {
+  clip-path: none;
+  background-size: contain;
+  background-position: center;
+  box-shadow: 0px 0px 30px 0px cyan;
+  transform: scale(1.1);
+}
+
+.awardsHexContain img {
+  width: 150px;
+  height: 150px;
+}
+
+.awardsDescription {
+  padding: 15px;
+}
+
+.awardsDescription p {
+  color: var(--tertiarytext);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 @keyframes shine {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -165,5 +243,121 @@
 
   .achieversGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .awardsContainer {
+    margin-top: 4%;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;
+  }
+
+  .awardsHexContain img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .awardsDescription p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .awardsContainer {
+    margin-top: 5%;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .awardsContainer {
+    margin-top: 5%;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  .awardsDescription p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .awardsContainer {
+    margin-top: 4%;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;
+  }
+
+  .awardsDescription p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .awardsContainer {
+    margin-top: 4%;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  .awardsHexContain img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .awardsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .awardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  .awardsDescription p {
+    font-size: 0.8rem;
+  }
+
+  .awardsHexContain img {
+    width: 100px;
+    height: 100px;
   }
 }

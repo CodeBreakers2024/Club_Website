@@ -1,5 +1,12 @@
 [
   {
+    "name": "Fizzbuzz 2.0",
+    "description": "A thrilling three-round event featuring a buzzer round, aptitude-based object hunt, and a competitive programming challenge.",
+    "dates": "25 SEPTEMBER 2024",
+    "isActive": false,
+    "image": "/profiles/event/fizzbuzz.jpg"
+  },
+  {
     "name": "Web3 & Stellar",
     "description": "An insightful web-3 seminar exploring the fundamentals and future potential of decentralized technology",
     "dates": "18 MARCH 2024",
@@ -12,13 +19,6 @@
     "dates": "14-16 JANUARY 2024",
     "isActive": true,
     "image": "/profiles/event/HackSphere.jpg"
-  },
-  {
-    "name": "Fizzbuzz 2.0",
-    "description": "A thrilling three-round event featuring a buzzer round, aptitude-based object hunt, and a competitive programming challenge.",
-    "dates": "25 SEPTEMBER 2023",
-    "isActive": false,
-    "image": "/profiles/event/fizzbuzz.jpg"
   },
   {
     "name": "CodeBlaze",

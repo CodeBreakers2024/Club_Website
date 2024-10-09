@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Github, ExternalLink, Code2 } from 'lucide-react';
+import React from 'react';
+import { Github, ExternalLink } from 'lucide-react';
 import Style from '../Stylesheets/Rtop.module.css';
 import Mushan from "../Assets/mushanProject.jpeg";
 import Tushar from "../Assets/tusharProject.jpeg"

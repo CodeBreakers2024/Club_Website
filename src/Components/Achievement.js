@@ -7,7 +7,7 @@ export default function Achievements() {
 
   const achievers = [
     {
-      name: "Pratham Bhojwani",
+      name: "Pratham Rajbhoj",
       image: "/profiles/Core/Pratham.jpg",
       achievements: [
         "Won the National Coding Championship 2023",

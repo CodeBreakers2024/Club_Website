@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import Style from "../Stylesheets/Pgabout.module.css";
 import Domain from './Domain';
 import domains from "../data/Members.json";
 import useTypingEffect from "./typinghook";
 
 function PgAbout() {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [startTyping, setStartTyping] = useState(false);
   const typedText = useTypingEffect("About Us", 150, startTyping);
   const typedText1 = useTypingEffect(
@@ -15,20 +14,19 @@ function PgAbout() {
   );
   const scrollContainerRef = useRef(null);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (scrollContainerRef.current) {
       const { scrollTop, scrollHeight, clientHeight } = scrollContainerRef.current;
       const position = Math.ceil(
         (scrollTop / (scrollHeight - clientHeight)) * 100
       );
-      setScrollPosition(position);
       
       // Start typing when scroll position is 4 or 5
       if (position >= 4 && !startTyping) {
         setStartTyping(true);
       }
     }
-  };
+  }, [startTyping]);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
@@ -40,7 +38,7 @@ function PgAbout() {
         scrollContainer.removeEventListener('scroll', handleScroll);
       }
     };
-  }, [handleScroll]); // Added handleScroll to the dependency array
+  }, [handleScroll]);
 
   return (
     <div 

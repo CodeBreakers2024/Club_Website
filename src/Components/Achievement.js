@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import styles from '../Stylesheets/Achievement.module.css';
-import fizzTestAward from '../Assets/Fizz-Buzz.jpg'
+import rohit from '../Assets/rohitA.png';
+import pratham from '../Assets/prathamA.png';
+import muskan from '../Assets/muskansA.png';
+import suyog from '../Assets/suyogA.png';
+import siddhant from '../Assets/siddhantA.png';
+import anjali from '../Assets/anjaliA.png';
+import amit from '../Assets/amitA.png';
+import adnan from '../Assets/adnanA.png';
+import ayush from '../Assets/aayushA.png';
+import nupur from '../Assets/nupurA.png';
 
 export default function Achievements() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -9,35 +18,70 @@ export default function Achievements() {
     {
       name: "Pratham Rajbhoj",
       image: "/profiles/Core/Pratham.jpg",
-      achievements: [
-        "Won the National Coding Championship 2023",
-        "Bagged a package of 16 LPA from Kickdrum"
-      ]
+      achievements: ["Bagged a package of 16 LPA from Kickdrum"]
     },
     {
       name: "Nupur Hada",
-      image: "/profiles/Core/Nupur.jpg",
-      achievements: [
-        "Published a groundbreaking research paper in AI",
-        "Bagged A package of 12 LPA from Aspect Ratio"
-      ]
+      image: nupur,
+      achievements: ["Bagged A package of 12 LPA from Aspect Ratio"]
     },
     {
       name: "Harsh Diwase",
       image: "/profiles/Core/Harsh.jpg",
-      achievements: [
-        "Secured first place in the International Math Olympiad",
-        "Bagged a package of 16 LPA from Darwinbox"
-      ]
-    }
+      achievements: ["Bagged a package of 16 LPA from Darwinbox"]
+    },
+    {
+      name: "Ayush Bhojwani",
+      image: ayush,
+      achievements: ["Bagged a package of 23 LPA from DE Shaw"]
+    },
+    {
+      name: "Rohit Bhojwani",
+      image: rohit,
+      achievements: ["Working in Accenture"]
+    },
   ];
 
   const allAwards = [
     {
-      awardImage: fizzTestAward,
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore quo beatae consequuntur optio! Architecto voluptas, incidunt nam maiores, ullam dicta sint repudiandae accusamus magnam porro veritatis explicabo, eum sunt."
-      ]
+      awardImage: rohit,
+      name: "Rohit Bhojwani",
+      description: "1st Rank in Codejam"
+    },
+    {
+      awardImage: muskan,
+      name: "Muskan Setiya",
+      description: "Participated at the Moralis Web3 Filecoin Hackathon and took a prize of $867"
+    },
+    {
+      awardImage: pratham,
+      name: "Pratham Rajbhoj",
+      description: "1st Rank in Techfest IIT Bombay in CoDecode at Nagpur Zonals"
+    },
+    {
+      awardImage: siddhant,
+      name: "Siddhant Jain",
+      description: "Winner at SIH, Karnataka Police Hackathon, India Singapore Hackathon"
+    },
+    {
+      awardImage: anjali,
+      name: "Anjali Kushwaha",
+      description: "#1 HackTheGame IIT Goa"
+    },
+    {
+      awardImage: amit,
+      name: "Amit Mondal",
+      description: "Selected as Mentee in Microsoft Engage"
+    },
+    {
+      awardImage: adnan,
+      name: "Mohammad Adnan Dalal",
+      description: "2nd Position National Level CTF organised by SPVCET - 10k Cash Prize"
+    },
+    {
+      awardImage: suyog,
+      name: "Suyog Parkhi, Aditya Pande",
+      description: "IISF SIF'23 top 50 in India"
     },
   ];
 
@@ -45,7 +89,6 @@ export default function Achievements() {
     <div className={styles.container}>
       <h1 className={styles.title}>Our Achievements</h1>
       <h2 className={styles.subtitle}>Hall of Fame</h2>
-
       <div className={styles.achieversGrid}>
         {achievers.map((achiever, index) => (
           <div
@@ -84,19 +127,16 @@ export default function Achievements() {
           <h1>Awards</h1>
         </div>
         <div className={styles.awardsGrid}>
-          {
-            allAwards.map((data, awardsIndex) => (
-              <div className={styles.awardsHexContain} key={awardsIndex}>
-                <div>
-                  <div className={styles.hexagon} style={{ backgroundImage: `url(${data.awardImage})` }} />
-                </div>
-
-                <div className={styles.awardsDescription}>
-                  <p>{data.description}</p>
-                </div>
+          {allAwards.map((award, index) => (
+            <div key={index} className={styles.awardsHexContain}>
+              <div>
+                <div className={styles.hexagon} style={{ backgroundImage: `url(${award.awardImage})` }} />
               </div>
-            ))
-          }
+              <div className={styles.awardsDescription}>
+                <p>{award.name}: {award.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

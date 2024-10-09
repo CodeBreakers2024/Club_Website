@@ -48,11 +48,9 @@
     height: 100%;
 }
 
-
 @media (max-width:750px) {
-
-    .container{
-        padding-left: 60px 0px 10px 5px;
+    .container {
+        padding: 60px 0px 10px 5px;
     }
 
     .section {
@@ -66,21 +64,21 @@
 }
 
 @media screen and (max-width:600px) {
-    .section hr{
+    .section hr {
         width: 3%;
     }
 }
 
-.opacity0{
-    animation: disappear 0.1s forwards forwards;
-    -webkit-animation: disappear 0.1s forwards forwards;
+.opacity0 {
+    animation: disappear 0.1s forwards;
+    -webkit-animation: disappear 0.1s forwards;
 }
 
 @keyframes disappear {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
-        opacity: 0;
+    100% {
+        opacity: 1;
     }
 }

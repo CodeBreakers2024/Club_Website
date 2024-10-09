@@ -39,9 +39,14 @@ const DomainCard = ({
 
   const renderTags = () => (
     tags.map((tag, i) => (
-      <a className={styles.link} key={i} href="#">
+      <span 
+        className={styles.link} 
+        key={i}
+        role="button"
+        tabIndex={0}
+      >
         {tag}
-      </a>
+      </span>
     ))
   );
 

@@ -22,7 +22,7 @@ const Ham = () => {
                 </div>
                 <nav>
                 <ul className={Style.list}>
-                        <li><Link onClick={toggleHam} to={"/"} className={path.pathname=="/" ? Style.active : ""}>Home</Link></li>
+                        <li><Link onClick={toggleHam} to={"/"} className={path.pathname==="/" ? Style.active : ""}>Home</Link></li>
                         <li><Link className={path.pathname==="/about" ? Style.active : ""} onClick={toggleHam} to={"/about"}>About</Link></li>
                         <li><Link className={path.pathname==="/achievements" ? Style.active : ""} onClick={toggleHam} to={"/achievements"}>Achievements</Link></li>
                         <li><Link className={path.pathname==="/events" ? Style.active : ""} onClick={toggleHam} to={"/events"}>Events</Link></li>

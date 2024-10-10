@@ -23,8 +23,6 @@ const ProfileCard = ({
           <img
             src={profilePic}
             alt={alt}
-            width="130"
-            height="130"
             className={styles.profile_pic_img}
           />
         </div>

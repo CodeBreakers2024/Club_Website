@@ -132,7 +132,7 @@
 }
 .card {
   height: 375px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 1.5rem;
   border-radius: 16px;
   background: #17141d;
@@ -162,10 +162,6 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
-/* 
-.card_header {
-  margin-bottom: auto;
-} */
 
 .office_names {
   color: rgb(207, 207, 207);
@@ -181,13 +177,13 @@
 }
 
 .card_header p {
-  font-size: 14px;
+  font-size: 24px;
   margin: 0 0 1rem;
   color: #7a7a8c;
 }
 
 .card_header h2 {
-  font-size: 22px;
+  font-size: 30px;
   margin: 0.25rem 0 auto;
   text-decoration: none;
   border: 0;
@@ -308,6 +304,12 @@
 
 .profile_pic {
   margin-bottom: 15px;
+
+}
+
+.profile_pic_img{
+  width: 130px;
+  height: 130px;
 }
 
 .office_profile {
@@ -370,4 +372,18 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@media (max-width: 400px){
+  .card{
+    height: 275px;
+    min-width: 230px;
+  }
+  .card_header h2 {
+    font-size: 24px;
+  }
+  .profile_pic_img{
+    width: 100px;
+    height: 100px;
+  }
 }

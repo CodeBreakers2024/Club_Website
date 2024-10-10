@@ -53,10 +53,10 @@ const DomainCard = ({
   return (
     <article
       className={`${isOffice ? (overflow ? styles.expand : '') : styles.card}`}
-      style={{ ...style, minWidth: "300px", maxWidth: isOffice ? "300px" : undefined }}
+      style={{ ...style}}
     >
       <header className={styles.card_header}>
-        <h2 className={isOffice ? styles.office_h2 : ''} style={{ fontSize: isOffice ? "20px" : "30px" }}>
+        <h2 className={isOffice ? styles.office_h2 : ''} >
           {renderTitle()}
         </h2>
       </header>

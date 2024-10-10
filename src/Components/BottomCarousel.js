@@ -39,7 +39,7 @@ const BottomCarousel = () => {
         </Slider>
 
         <div className={styles.message}>
-          <p>One Family !!!</p>
+          <p>At TCB, we merge creativity and technology, inviting everyone to explore projects and enhance their skills</p>
         </div>
       </div>
     </div>

@@ -37,18 +37,18 @@ const DomainCard = ({
     ))
   );
 
-  const renderTags = () => (
-    tags.map((tag, i) => (
-      <span 
-        className={styles.link} 
-        key={i}
-        role="button"
-        tabIndex={0}
-      >
-        {tag}
-      </span>
-    ))
-  );
+  // const renderTags = () => (
+  //   tags.map((tag, i) => (
+  //     <span 
+  //       className={styles.link} 
+  //       key={i}
+  //       role="button"
+  //       tabIndex={0}
+  //     >
+  //       {tag}
+  //     </span>
+  //   ))
+  // );
 
   return (
     <article

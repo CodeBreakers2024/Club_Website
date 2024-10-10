@@ -272,6 +272,46 @@
           "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
           "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
         }
+      },
+      {
+        "name": "Tejas",
+        "position": "Member",
+        "alt": "Tejas",
+        "profilePic": "/profiles/Dev/tejas.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
+        }
+      },
+      {
+        "name": "Aditya Pande",
+        "position": "Member",
+        "alt": "Siddhi",
+        "profilePic": "/profiles/Dev/aditya.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
+        }
+      },
+      {
+        "name": "Harsh Diwase",
+        "position": "Member",
+        "alt": "Siddhi",
+        "profilePic": "/profiles/core/Harsh.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
+        }
+      },
+      {
+        "name": "Naman Sarda",
+        "position": "Member",
+        "alt": "Siddhi",
+        "profilePic": "/profiles/core/Naman.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
+        }
       }
     ]
   },
@@ -388,6 +428,26 @@
         "socials": {
           "linkedin": "https://www.linkedin.com/in/vaidehi-sahu-a87753267?trk=contact-info",
           "instagram": "https://www.instagram.com/vaidehisahu_07/"
+        }
+      },
+      {
+        "name": "Nupur Hada",
+        "position": "Member",
+        "alt": "Nupur",
+        "profilePic": "/profiles/core/Nupur.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
+        }
+      },
+      {
+        "name": "Muskan Jaiswal",
+        "position": "Member",
+        "alt": "Muskan",
+        "profilePic": "/profiles/core/Muskan.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/siddhi-kothekar-212906290",
+          "instagram": "https://instagram.com/siddhi_kothekar?igshid=MzMyNGUyNmU2YQ=="
         }
       }
     ]
